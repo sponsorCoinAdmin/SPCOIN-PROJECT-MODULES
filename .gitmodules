@@ -10,3 +10,6 @@
 [submodule "spcoin-hardhat-contracts-js-access"]
 	path = spcoin-hardhat-contracts-js-access
 	url = git@github.com:sponsorCoinAdmin/spcoin-hardhat-contracts-js-access.git
+[submodule "spCoinSetupEnv"]
+	path = spCoinSetupEnv
+	url = git@github.com:sponsorCoinAdmin/spCoinSetupEnv.git
