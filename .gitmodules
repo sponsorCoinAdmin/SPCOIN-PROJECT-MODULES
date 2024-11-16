@@ -1,0 +1,12 @@
+[submodule "spcoin-hardhat-contracts-ts-access"]
+	path = spcoin-hardhat-contracts-ts-access
+	url = git@github.com:sponsorCoinAdmin/spcoin-hardhat-contracts-ts-access.git
+[submodule "spcoin-docs"]
+	path = spcoin-docs
+	url = git@github.com:sponsorCoinAdmin/spcoin-docs.git
+[submodule "spcoin-jmeter-tests"]
+	path = spcoin-jmeter-tests
+	url = git@github.com:sponsorCoinAdmin/spcoin-jmeter-tests.git
+[submodule "spcoin-nextjs-front-end"]
+	path = spcoin-nextjs-front-end
+	url = git@github.com:sponsorCoinAdmin/spcoin-nextjs-front-end.git
