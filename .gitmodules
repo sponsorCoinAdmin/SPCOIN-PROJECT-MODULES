@@ -1,6 +1,3 @@
-[submodule "spcoin-hardhat-contracts-ts-access"]
-	path = spcoin-hardhat-contracts-ts-access
-	url = git@github.com:sponsorCoinAdmin/spcoin-hardhat-contracts-ts-access.git
 [submodule "spcoin-docs"]
 	path = spcoin-docs
 	url = git@github.com:sponsorCoinAdmin/spcoin-docs.git
