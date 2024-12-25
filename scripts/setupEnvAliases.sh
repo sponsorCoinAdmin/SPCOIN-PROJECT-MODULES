@@ -28,8 +28,8 @@ createNewEnvironmentFile() {
     echo "export SPCOIN_ROOT_NAME=\$ACTIVE_PROJECT_NAME"                                 | tee -a $ACTIVE_ENV_PATH/.e
     echo "export SPCOIN_ROOT_PATH=\$ACTIVE_PROJECT_PATH"                                 | tee -a $ACTIVE_ENV_PATH/.e
 
-    echo "export SPCOIN_BG_PATH=\$SPCOIN_ROOT_PATH/spcoin-hardhat-contract-access-tests" | tee -a $ACTIVE_ENV_PATH/.e
-    echo "export SPCOIN_FG_PATH=\$SPCOIN_ROOT_PATH/spcoin-nextjs-front-end"              | tee -a $ACTIVE_ENV_PATH/.e
+    echo "export SPCOIN_BE_PATH=\$SPCOIN_ROOT_PATH/spcoin-hardhat-contract-access-tests" | tee -a $ACTIVE_ENV_PATH/.e
+    echo "export SPCOIN_FE_PATH=\$SPCOIN_ROOT_PATH/spcoin-nextjs-front-end"              | tee -a $ACTIVE_ENV_PATH/.e
 
     # echo "export SPCOIN_ROOT_SCRIPTS_DIR=\$ACTIVE_PROJECT_PATH/scripts" | tee -a $ACTIVE_ENV_PATH/.e
     # echo "export SPCOIN_ROOT_ENV_DIR=\$ACTIVE_ENV_PATH/.e"              | tee -a $ACTIVE_ENV_PATH/.e

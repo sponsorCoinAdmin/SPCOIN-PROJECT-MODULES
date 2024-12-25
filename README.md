@@ -4,11 +4,11 @@ POPULAR COMMANDS
 alias ve="vi $ROOT_ENV_DIR/.e;e"
 alias vm="vi $ROOT_ENV_DIR/.m;m"
 
-alias cdbg="cd $PROJECT_ROOT/$SPCOIN_BG_PATH"
-alias cdfg="cd $PROJECT_ROOT/$SPCOIN_FG_PATH"
+alias cdbe="cd $PROJECT_ROOT/$SPCOIN_BE_PATH"
+alias cdfe="cd $PROJECT_ROOT/$SPCOIN_FE_PATH"
 alias cdscr="cd $ROOT_SCRIPTS_DIR"
 alias cddep="cdscr; cd deployments"
-alias cdhh="cdbg"
+alias cdhh="cdbe"
 
 alias sethh="clear; cdhh"
 alias vbrc="vi ~/.bashrc"
