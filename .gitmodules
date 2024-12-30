@@ -7,3 +7,4 @@
 [submodule "spcoin-nextjs-front-end"]
 	path = spcoin-nextjs-front-end
 	url = git@github.com:sponsorCoinAdmin/spcoin-nextjs-front-end.git
+
