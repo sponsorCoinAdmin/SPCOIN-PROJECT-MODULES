@@ -15,6 +15,9 @@ alias vbrc="vi ~/.bashrc"
 alias vg="sethh; vi .gitignore"
 alias vs="code"
 
+# CLONING PROJECTS WITH ASSOCIATED SUBMODULES
+git clone --recurse-submodules --remote-submodules <repo-URL>
+
 # NPM SETUP
 alias npmi="npm install @sponsorcoin/spcoin-access-modules"
 alias npmp="npm publish"
