@@ -18,6 +18,12 @@ alias vs="code"
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 git clone --recurse-submodules --remote-submodules <repo-URL>
 
+## EX1. cloning SPCOIN-PROJECT-MODULES with all submodules
+git clone --recurse-submodules --remote-submodules git@github.com:sponsorCoinAdmin/SPCOIN-PROJECT-MODULES.git
+
+## EX2. cloning spcoin-hardhat-contract-access-tests.git with submodules
+git clone --recurse-submodules --remote-submodules git@github.com:sponsorCoinAdmin/spcoin-hardhat-contract-access-tests.git
+
 # NPM SETUP
 alias npmi="npm install @sponsorcoin/spcoin-access-modules"
 alias npmp="npm publish"
