@@ -1,0 +1,19 @@
+{
+  "name": "spcoin-project-modules",
+  "version": "1.0.0",
+  "description": "Sponsorcoin Project Modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sponsorCoinAdmin/SPCOIN-PROJECT-MODULES.git"
+  },
+  "author": "Robert Lanson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sponsorCoinAdmin/SPCOIN-PROJECT-MODULES/issues"
+  },
+  "homepage": "https://github.com/sponsorCoinAdmin/SPCOIN-PROJECT-MODULES#readme"
+}
