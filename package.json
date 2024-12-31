@@ -7,7 +7,7 @@
     "test": "echo \"Error: no SPCOIN-PROJECT-MODULES tests specified\" && exit 1",
     "preinstall": "echo preinstall SPCOIN-PROJECT-MODULES; . ./scripts/installDevSubModules.sh",
     "postinstall": "echo postinstall SPCOIN-PROJECT-MODULES Installation Complete",
-    "installDevModules": "echo Installing SPCOIN-PROJECT-MODULES; . ./scripts/installDevSubModules.sh"
+    "installDevSubModules": "echo Installing SPCOIN-PROJECT-MODULES; . ./scripts/installDevSubModules.sh"
   },
   "repository": {
     "type": "git",
