@@ -18,8 +18,8 @@ alias setbe="cdbe; . ./scripts/setupEnvAliases.sh;m"
 alias vbrc="vi ~/.bashrc"
 alias vs="code"
 
-alias installDevModules="npm run installDevModules"
-alias idm="installDevModules"
+alias installDevSubModules="npm run installDevSubModules"
+alias idsm="installDevSubModules"
 
 alias remixd="nohup node $PROJECT_HOME/node_modules/@remix-project/remixd/src/bin/remixd.js 2>&1 > $LOGS_DIR/remixd.out &"
 alias hhcompile="sethh; npx hardhat compile"

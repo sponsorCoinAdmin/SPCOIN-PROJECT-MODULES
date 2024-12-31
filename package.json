@@ -4,7 +4,10 @@
   "description": "Sponsorcoin Project Modules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no SPCOIN-PROJECT-MODULES tests specified\" && exit 1",
+    "preinstall": "echo preinstall SPCOIN-PROJECT-MODULES; . ./scripts/installDevSubModules.sh",
+    "postinstall": "echo postinstall SPCOIN-PROJECT-MODULES Installation Complete",
+    "installDevModules": "echo Installing SPCOIN-PROJECT-MODULES; . ./scripts/installDevSubModules.sh"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/sponsorCoinAdmin/SPCOIN-PROJECT-MODULES/issues"
   },
-  "homepage": "https://github.com/sponsorCoinAdmin/SPCOIN-PROJECT-MODULES#readme"
+  "homepage": "https://github.com/sponsorCoinAdmin/SPCOIN-PROJECT-MODULES#readme",
+  "dependencies": {
+    "submodules-install": "^1.1.0"
+  }
 }
