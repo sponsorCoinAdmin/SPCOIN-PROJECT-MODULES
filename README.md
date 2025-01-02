@@ -28,7 +28,6 @@ git clone --recurse-submodules --remote-submodules git@github.com:sponsorCoinAdm
 alias npmi="npm install @sponsorcoin/spcoin-access-modules"
 alias npmp="npm publish"
 
-
 # HARD HAT TESTING
 alias remixd="nohup node $PROJECT_HOME/node_modules/@remix-project/remixd/src/bin/remixd.js 2>&1 > $LOGS_DIR/remixd.out &"
 alias hhcompile="sethh; npx hardhat compile"
