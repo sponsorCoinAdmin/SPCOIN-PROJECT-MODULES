@@ -1,7 +1,7 @@
 CURR_DIR=$(PWD)
-cd spcoin-hardhat-contract-access-test
+cd $SPCOIN_BE_PATH
 npm i 
 cd $CURR_DIR
-cd spcoin-hardhat-contract-access-test
+cd $SPCOIN_FE_PATH
 npm i 
 cd $CURR_DIR
