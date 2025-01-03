@@ -44,4 +44,5 @@ insertOnce "set -o vi" ~/.bashrc;
 insertOnce ". $ACTIVE_ENV_PATH/." ~/.bashrc;
 
 #RUN THE ENVIRONMENT SETUP
+echo "EXECUTING: . $ACTIVE_ENV_PATH/.e"
 . $ACTIVE_ENV_PATH/.e

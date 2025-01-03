@@ -1,6 +1,6 @@
 export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES
-export ACTIVE_PROJECT_PATH=/c/Users/Robin/OneDrive/Dev/gitRepo/sponsorCoin/WIP/SPCOIN-PROJECT-MODULES
-export ACTIVE_ENV_PATH=/c/Users/Robin/OneDrive/Dev/gitRepo/sponsorCoin/WIP/SPCOIN-PROJECT-MODULES/.env
+export ACTIVE_PROJECT_PATH=/c/Users/robin/OneDrive/Dev/gitRepo/sponsorcoin/WIP/SPCOIN-PROJECT-MODULES
+export ACTIVE_ENV_PATH=/c/Users/robin/OneDrive/Dev/gitRepo/sponsorcoin/WIP/SPCOIN-PROJECT-MODULES/.env
 export ACTIVE_SCRIPTS_PATH=$ACTIVE_PROJECT_PATH/scripts
 export ACTIVE_LOGS_PATH=$ACTIVE_PROJECT_PATH/logs
 export SPCOIN_ROOT_NAME=$ACTIVE_PROJECT_NAME
