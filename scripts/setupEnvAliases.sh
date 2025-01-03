@@ -1,4 +1,5 @@
 clear
+echo ==== SETTING UP ENVIRONMENT VARIABLES ====
 export ACTIVE_PROJECT_NAME=$(basename $PWD)
 export ACTIVE_PROJECT_PATH=$PWD
 export ACTIVE_ENV_DIR=/.env
