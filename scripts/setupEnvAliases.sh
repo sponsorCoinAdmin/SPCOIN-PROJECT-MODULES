@@ -36,12 +36,17 @@ createNewEnvironmentFile() {
     # echo "export SPCOIN_ROOT_ENV_DIR=\$ACTIVE_ENV_PATH/.e"              | tee -a $ACTIVE_ENV_PATH/.e
     # echo "export SPCOIN_ROOT_LOGS_PATH=\$ACTIVE_PROJECT_PATH/logs"      | tee -a $ACTIVE_ENV_PATH/.e
     echo ". \$ACTIVE_ENV_PATH/.a"                                                        | tee -a $ACTIVE_ENV_PATH/.e
+    # echo "m"                                                                             | tee -a $ACTIVE_ENV_PATH/.e
 }
 
 #SET UP BASH ENVIRONMENT
 createNewEnvironmentFile $ACTIVE_PROJECT_PATH $ACTIVE_PROJECT_NAME $ACTIVE_ENV_DIR
 insertOnce "set -o vi" ~/.bashrc;
-insertOnce ". $ACTIVE_ENV_PATH/." ~/.bashrc;
+sed -i '/ACTIVE_ENV_PATH/d' ~/.bashrc
+echo "export ACTIVE_ENV_PATH=$ACTIVE_ENV_PATH/.e"                                        | tee -a ~/.bashrc
+echo ". \$ACTIVE_ENV_PATH"                                                               | tee -a ~/.bashrc
+
+# insertOnce ". $ACTIVE_ENV_PATH/." ~/.bashrc;
 
 #RUN THE ENVIRONMENT SETUP
 echo "EXECUTING: . $ACTIVE_ENV_PATH/.e"
