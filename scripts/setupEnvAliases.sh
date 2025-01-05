@@ -53,4 +53,4 @@ echo "cd \$ACTIVE_PROJECT_PATH"                      | tee -a ~/.bashrc
 
 #RUN THE ENVIRONMENT SETUP
 echo "EXECUTING: . $ACTIVE_ENV_FILE_PATH"
-. \$ACTIVE_ENV_FILE_PATH
+. $ACTIVE_ENV_FILE_PATH
