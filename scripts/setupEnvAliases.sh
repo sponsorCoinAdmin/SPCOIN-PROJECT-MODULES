@@ -40,11 +40,15 @@ createNewEnvironmentFile() {
 }
 
 #SET UP BASH ENVIRONMENT
-createNewEnvironmentFile $ACTIVE_PROJECT_PATH $ACTIVE_PROJECT_NAME $ACTIVE_ENV_DIR
+createNewEnvironmentFile $ROOT_PROJECT_PATH $ROOT_PROJECT_NAME $ROOT_ENV_DIR
 insertOnce "set -o vi" ~/.bashrc;
-sed -i '/ACTIVE_ENV_PATH/d' ~/.bashrc
-echo "export ACTIVE_ENV_PATH=$ACTIVE_ENV_PATH/.e"                                        | tee -a ~/.bashrc
-echo ". \$ACTIVE_ENV_PATH"                                                               | tee -a ~/.bashrc
+insertOnce "export ROOT_ENV_PATH=$ACTIVE_ENV_PATH/.e" ~/.bashrc;
+insertOnce ". \$ROOT_ENV_PATH" ~/.bashrc;
+sed -i '/ACTIVE_PROJECT_PATH/d' ~/.bashrc;
+sed -i '/ACTIVE_ENV_PATH/d' ~/.bashrc;
+
+# echo "export ACTIVE_PROJECT_PATH=$ACTIVE_PROJECT_PATH" | tee -a ~/.bashrc
+echo "cd \$ACTIVE_PROJECT_PATH"                      | tee -a ~/.bashrc
 
 # insertOnce ". $ACTIVE_ENV_PATH/." ~/.bashrc;
 
