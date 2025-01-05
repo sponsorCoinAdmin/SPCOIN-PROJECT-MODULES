@@ -1,6 +1,7 @@
 clear
 echo ==== SETTING UP ENVIRONMENT VARIABLES ====
 export ACTIVE_PROJECT_NAME=$(basename $PWD)
+export ACTIVE_ROOT_DIR="$PWD"
 export ACTIVE_PROJECT_PATH=$PWD
 export ACTIVE_ENV_DIR=/.env
 
@@ -19,31 +20,29 @@ createNewEnvironmentFile() {
     export ACTIVE_PROJECT_NAME=$2
     export ACTIVE_ENV_DIR=$3
     export ACTIVE_ENV_PATH=$ACTIVE_PROJECT_PATH$ACTIVE_ENV_DIR
-    echo "SET UP SPCOIN_ROOT_ENV_DIR CONFIGURATION FILE: $$ACTIVE_ENV_PATH/.e"
-    echo "export ACTIVE_PROJECT_NAME=$ACTIVE_PROJECT_NAME"                               | tee    $ACTIVE_ENV_PATH/.e
-    echo "export ACTIVE_PROJECT_PATH=$ACTIVE_PROJECT_PATH"                               | tee -a $ACTIVE_ENV_PATH/.e
-    echo "export ACTIVE_ENV_PATH=$ACTIVE_ENV_PATH"                                       | tee -a $ACTIVE_ENV_PATH/.e
-    echo "export ACTIVE_SCRIPTS_PATH=\$ACTIVE_PROJECT_PATH/scripts"                      | tee -a $ACTIVE_ENV_PATH/.e
-    echo "export ACTIVE_LOGS_PATH=\$ACTIVE_PROJECT_PATH/logs"                            | tee -a $ACTIVE_ENV_PATH/.e
+    export ACTIVE_ENV_FILE_PATH=$ACTIVE_ENV_PATH/.e
+    echo "#SPCOIN PROJECT CONFIGURATION FILE: $ACTIVE_PROJECT_NAME"                      | tee    $ACTIVE_ENV_FILE_PATH
+    echo "#SPCOIN ENVIRONMENT CONFIGURATION SETUP SCRIPT: $ACTIVE_ENV_FILE_PATH"         | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export ACTIVE_ENV_FILE_PATH=$ACTIVE_ENV_FILE_PATH"                             | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export ACTIVE_PROJECT_NAME=$ACTIVE_PROJECT_NAME"                               | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export ACTIVE_PROJECT_PATH=$ACTIVE_PROJECT_PATH"                               | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export ACTIVE_ENV_PATH=$ACTIVE_ENV_PATH"                                       | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export ACTIVE_SCRIPTS_PATH=\$ACTIVE_PROJECT_PATH/scripts"                      | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export ACTIVE_LOGS_PATH=\$ACTIVE_PROJECT_PATH/logs"                            | tee -a $ACTIVE_ENV_FILE_PATH
 
-    echo "export SPCOIN_ROOT_NAME=\$ACTIVE_PROJECT_NAME"                                 | tee -a $ACTIVE_ENV_PATH/.e
-    echo "export SPCOIN_ROOT_PATH=\$ACTIVE_PROJECT_PATH"                                 | tee -a $ACTIVE_ENV_PATH/.e
+    echo "export SPCOIN_ROOT_NAME=\$ACTIVE_PROJECT_NAME"                                 | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export SPCOIN_ROOT_PATH=\$ACTIVE_PROJECT_PATH"                                 | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export SPCOIN_BE_PATH=\$SPCOIN_ROOT_PATH/spcoin-hardhat-contract-access-test"  | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "export SPCOIN_FE_PATH=\$SPCOIN_ROOT_PATH/spcoin-nextjs-front-end"              | tee -a $ACTIVE_ENV_FILE_PATH
 
-    echo "export SPCOIN_BE_PATH=\$SPCOIN_ROOT_PATH/spcoin-hardhat-contract-access-test"  | tee -a $ACTIVE_ENV_PATH/.e
-    echo "export SPCOIN_FE_PATH=\$SPCOIN_ROOT_PATH/spcoin-nextjs-front-end"              | tee -a $ACTIVE_ENV_PATH/.e
-
-    # echo "export SPCOIN_ROOT_SCRIPTS_DIR=\$ACTIVE_PROJECT_PATH/scripts" | tee -a $ACTIVE_ENV_PATH/.e
-    # echo "export SPCOIN_ROOT_ENV_DIR=\$ACTIVE_ENV_PATH/.e"              | tee -a $ACTIVE_ENV_PATH/.e
-    # echo "export SPCOIN_ROOT_LOGS_PATH=\$ACTIVE_PROJECT_PATH/logs"      | tee -a $ACTIVE_ENV_PATH/.e
-    echo ". \$ACTIVE_ENV_PATH/.a"                                                        | tee -a $ACTIVE_ENV_PATH/.e
-    # echo "m"                                                                             | tee -a $ACTIVE_ENV_PATH/.e
+    echo ". \$ACTIVE_ENV_PATH/.a"                                                        | tee -a $ACTIVE_ENV_FILE_PATH
 }
 
 #SET UP BASH ENVIRONMENT
-createNewEnvironmentFile $ROOT_PROJECT_PATH $ROOT_PROJECT_NAME $ROOT_ENV_DIR
+createNewEnvironmentFile $ACTIVE_PROJECT_PATH $ACTIVE_PROJECT_NAME $ACTIVE_ENV_DIR
 insertOnce "set -o vi" ~/.bashrc;
-insertOnce "export ROOT_ENV_PATH=$ACTIVE_ENV_PATH/.e" ~/.bashrc;
-insertOnce ". \$ROOT_ENV_PATH" ~/.bashrc;
+insertOnce "export ROOT_ENV_CONFIG=$ACTIVE_ENV_FILE_PATH" ~/.bashrc;
+insertOnce ". \$ROOT_ENV_CONFIG" ~/.bashrc;
 sed -i '/ACTIVE_PROJECT_PATH/d' ~/.bashrc;
 sed -i '/ACTIVE_ENV_PATH/d' ~/.bashrc;
 
@@ -53,5 +52,5 @@ echo "cd \$ACTIVE_PROJECT_PATH"                      | tee -a ~/.bashrc
 # insertOnce ". $ACTIVE_ENV_PATH/." ~/.bashrc;
 
 #RUN THE ENVIRONMENT SETUP
-echo "EXECUTING: . $ACTIVE_ENV_PATH/.e"
-. $ACTIVE_ENV_PATH/.e
+echo "EXECUTING: . $ACTIVE_ENV_FILE_PATH"
+. \$ACTIVE_ENV_FILE_PATH
