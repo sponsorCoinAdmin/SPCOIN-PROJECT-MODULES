@@ -30,6 +30,7 @@ cloneSpCoinProjects() {<BR>
     &emsp;. ./scripts/setupEnvAliases.sh<BR>
     &emsp;cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;<BR>
     &emsp;cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;<BR>
+    setroot;<BR>
 }
 
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
