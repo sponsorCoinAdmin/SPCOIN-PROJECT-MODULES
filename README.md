@@ -18,7 +18,7 @@ alias vs="code"
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 
 ## Install and run the following script
-cloneStCoinProjects() \{
+"cloneStCoinProjects() \{
     export ACTIVE_ROOT_DIR=$PWD
     export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES
     git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;
@@ -30,7 +30,7 @@ cloneStCoinProjects() \{
     . ./scripts/setupEnvAliases.sh
     cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;
     cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;
-}
+}"
 
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
 ### 1. Run the above shell script in a command terminal
