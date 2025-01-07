@@ -24,9 +24,9 @@ cloneSpCoinProjects() {<BR>
     &emsp;git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;<BR>
     &emsp;echo "EXECUTING cd $ACTIVE_PROJECT_NAME"<BR>
     &emsp;cd $ACTIVE_PROJECT_NAME<BR>
-    &emsp;echo"EXECUTING: . ./scripts/installNodeSubModules.sh "<BR>
+    &emsp;echo "EXECUTING: . ./scripts/installNodeSubModules.sh "<BR>
     &emsp;. ./scripts/installNodeSubModules.sh<BR>
-    &emsp;echo"EXECUTING: . ./scripts/setupEnvAliases.sh"<BR>
+    &emsp;echo "EXECUTING: . ./scripts/setupEnvAliases.sh"<BR>
     &emsp;. ./scripts/setupEnvAliases.sh<BR>
     &emsp;cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;<BR>
     &emsp;cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;<BR>
