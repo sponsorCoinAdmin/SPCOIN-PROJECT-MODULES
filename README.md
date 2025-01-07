@@ -19,6 +19,7 @@ alias vs="code"
 
 ## Install and run the following script
 cloneSpCoinProjects() {<BR>
+    &emsp;clear<BR>
     &emsp;export ACTIVE_ROOT_DIR=$PWD<BR>
     &emsp;export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
     &emsp;git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;<BR>
