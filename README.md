@@ -20,16 +20,16 @@ alias vs="code"
 ## Install and run the following script
 cloneStCoinProjects() {<BR>
     &emsp;export ACTIVE_ROOT_DIR=$PWD<BR>
-    &emspexport ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
-    &emspgit clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;<BR>
-    &emspecho "EXECUTING cd $ACTIVE_PROJECT_NAME"<BR>
-    &emspcd $ACTIVE_PROJECT_NAME<BR>
-    echo"EXECUTING: . ./scripts/installNodeSubModules.sh "<BR>
-    . ./scripts/installNodeSubModules.sh<BR>
-    echo"EXECUTING: . ./scripts/setupEnvAliases.sh"<BR>
-    . ./scripts/setupEnvAliases.sh<BR>
-    cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;<BR>
-    cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;<BR>
+    &emsp;export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
+    &emsp;git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;<BR>
+    &emsp;echo "EXECUTING cd $ACTIVE_PROJECT_NAME"<BR>
+    &emsp;cd $ACTIVE_PROJECT_NAME<BR>
+    &emsp;echo"EXECUTING: . ./scripts/installNodeSubModules.sh "<BR>
+    &emsp;. ./scripts/installNodeSubModules.sh<BR>
+    &emsp;echo"EXECUTING: . ./scripts/setupEnvAliases.sh"<BR>
+    &emsp;. ./scripts/setupEnvAliases.sh<BR>
+    &emsp;cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;<BR>
+    &emsp;cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;<BR>
 }"<BR>
 
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
