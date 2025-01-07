@@ -30,7 +30,7 @@ cloneStCoinProjects() {<BR>
     &emsp;. ./scripts/setupEnvAliases.sh<BR>
     &emsp;cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;<BR>
     &emsp;cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;<BR>
-}"<BR>
+}
 
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
 ### 1. Run the above shell script in a command terminal
