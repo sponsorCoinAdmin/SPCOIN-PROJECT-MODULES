@@ -40,6 +40,7 @@ createNewEnvironmentFile() {
 #SET UP BASH ENVIRONMENT
 createNewEnvironmentFile $ACTIVE_PROJECT_PATH $ACTIVE_PROJECT_NAME $ACTIVE_ENV_DIR
 insertOnce "set -o vi" ~/.bashrc;
+insertOnce "###################### SPONSOR COIN ENVIRONMENT START SETTINGS #############################"  ~/.bashrc
 insertOnce "export ROOT_ENV_CONFIG=$ACTIVE_ENV_FILE_PATH" ~/.bashrc;
 insertOnce ". \$ROOT_ENV_CONFIG" ~/.bashrc;
 sed -i '/ACTIVE_PROJECT_PATH/d' ~/.bashrc;
