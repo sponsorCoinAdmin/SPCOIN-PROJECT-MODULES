@@ -18,7 +18,7 @@ alias vs="code"
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 
 ## Install and run the following script
-cloneStCoinProjects() {<BR>
+cloneSpCoinProjects() {<BR>
     &emsp;export ACTIVE_ROOT_DIR=$PWD<BR>
     &emsp;export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
     &emsp;git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;<BR>
@@ -35,14 +35,14 @@ cloneStCoinProjects() {<BR>
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
 ### 1. Run the above shell script in a command terminal
 ### 2. Execute the schipt in the directorywhere you wish to install the project by typing
-cloneSpcoinProjects\<enter>
+cloneSpCoinProjects\<enter>
 
 ## EX2. Cloning SPCOIN-PROJECT-MODULES with all submodules using your shell startup script
 ### 1. Install above shell script in your shell startup script.
 For example: if using bash install the above script in .bashrc.
 ### 3. Restart your command terminal to reload the startup script.
 ### 2. Execute the schipt in the directorywhere you wish to install the project by typing
-cloneSpcoinProjects\<enter>
+cloneSpCoinProjects\<enter>
 
 # Note:
 the above script installs all the spcoin projects and installs the Nod Package Modules
