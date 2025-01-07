@@ -18,7 +18,7 @@ alias vs="code"
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 
 ## Install and run the following script
-"cloneStCoinProjects() \{
+cloneStCoinProjects() {<BR>
     export ACTIVE_ROOT_DIR=$PWD
     export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES
     git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;
