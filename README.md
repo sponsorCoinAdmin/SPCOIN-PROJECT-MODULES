@@ -35,14 +35,14 @@ cloneStCoinProjects() {
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
 ### 1. Run the above shell script in a command terminal
 ### 2. Execute the schipt in the directorywhere you wish to install the project by typing
-cloneSpcoinProjects<enter>
+cloneSpcoinProjects\<enter>
 
 ## EX2. Cloning SPCOIN-PROJECT-MODULES with all submodules using your shell startup script
 ### 1. Install above shell script in your shell startup script.
 For example: if using bash install the above script in .bashrc.
 ### 3. Restart your command terminal to reload the startup script.
 ### 2. Execute the schipt in the directorywhere you wish to install the project by typing
-cloneSpcoinProjects<enter>
+cloneSpcoinProjects\<enter>
 
 # Note:
 the above script installs all the spcoin projects and installs the Nod Package Modules
