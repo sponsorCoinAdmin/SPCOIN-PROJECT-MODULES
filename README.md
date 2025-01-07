@@ -19,11 +19,11 @@ alias vs="code"
 
 ## Install and run the following script
 cloneStCoinProjects() {<BR>
-    export ACTIVE_ROOT_DIR=$PWD<BR>
-    export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
-    git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;<BR>
-    echo "EXECUTING cd $ACTIVE_PROJECT_NAME"<BR>
-    cd $ACTIVE_PROJECT_NAME<BR>
+    &emspexport ACTIVE_ROOT_DIR=$PWD<BR>
+    &emspexport ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
+    &emspgit clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;<BR>
+    &emspecho "EXECUTING cd $ACTIVE_PROJECT_NAME"<BR>
+    &emspcd $ACTIVE_PROJECT_NAME<BR>
     echo"EXECUTING: . ./scripts/installNodeSubModules.sh "<BR>
     . ./scripts/installNodeSubModules.sh<BR>
     echo"EXECUTING: . ./scripts/setupEnvAliases.sh"<BR>
