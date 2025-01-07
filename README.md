@@ -16,17 +16,36 @@ alias vg="sethh; vi .gitignore"
 alias vs="code"
 
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
-git clone --recurse-submodules --remote-submodules <repo-URL>
 
-## EX1. cloning SPCOIN-PROJECT-MODULES with all submodules
-git clone --recurse-submodules --remote-submodules git@github.com:sponsorCoinAdmin/SPCOIN-PROJECT-MODULES.git
+## Install and run the following script
+cloneStCoinProjects() {
+    export ACTIVE_ROOT_DIR=$PWD
+    export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES
+    git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;
+    echo "EXECUTING cd $ACTIVE_PROJECT_NAME"
+    cd $ACTIVE_PROJECT_NAME
+    echo"EXECUTING: . ./scripts/installNodeSubModules.sh "
+    . ./scripts/installNodeSubModules.sh
+    echo"EXECUTING: . ./scripts/setupEnvAliases.sh"
+    . ./scripts/setupEnvAliases.sh
+    cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;
+    cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;
+}
 
-## EX2. cloning spcoin-hardhat-contract-access-tests.git with submodules
-git clone --recurse-submodules --remote-submodules git@github.com:sponsorCoinAdmin/spcoin-hardhat-contract-access-tests.git
+## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
+### 1. Run the above shell script in a command terminal
+### 2. Execute the schipt in the directorywhere you wish to install the project by typing
+cloneSpcoinProjects<enter>
 
-# NPM SETUP
-alias npmi="npm install @sponsorcoin/spcoin-access-modules"
-alias npmp="npm publish"
+## EX2. Cloning SPCOIN-PROJECT-MODULES with all submodules using your shell startup script
+### 1. Install above shell script in your shell startup script.
+For example: if using bash install the above script in .bashrc.
+### 3. Restart your command terminal to reload the startup script.
+### 2. Execute the schipt in the directorywhere you wish to install the project by typing
+cloneSpcoinProjects<enter>
+
+# Note:
+the above script installs all the spcoin projects and installs the Nod Package Modules
 
 # HARD HAT TESTING
 alias remixd="nohup node $PROJECT_HOME/node_modules/@remix-project/remixd/src/bin/remixd.js 2>&1 > $LOGS_DIR/remixd.out &"
