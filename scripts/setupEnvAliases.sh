@@ -35,6 +35,7 @@ createNewEnvironmentFile() {
     echo "export SPCOIN_FE_PATH=\$SPCOIN_ROOT_PATH/spcoin-nextjs-front-end"              | tee -a $ACTIVE_ENV_FILE_PATH
 
     echo ". \$ACTIVE_ENV_PATH/.a"                                                        | tee -a $ACTIVE_ENV_FILE_PATH
+    echo "m"                                                                             | tee -a $ACTIVE_ENV_FILE_PATH
 }
 
 #SET UP BASH ENVIRONMENT
