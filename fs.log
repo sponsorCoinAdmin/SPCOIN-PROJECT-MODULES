@@ -1,0 +1,865 @@
+PDW=/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES
+================================================================================
+searchFile=/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES
+EXECUTING: getFilePathList dir =
+EXECUTING: For dir in node_modules node_modules-dev scripts spcoin-docs spcoin-hardhat-contract-access-test spcoin-jmeter-tests spcoin-nextjs-front-end
+EXECUTING: dir = node_modules
+\*\*\*Excluding Directory: node_modules
+EXECUTING: dir = node_modules-dev
+EXECUTING: processDir node_modules-dev
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev
+EXECUTING: getFilePathList dir = node_modules-dev
+EXECUTING: For dir in scripts spcoin-back-end spcoin-common spcoin-front-end
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+EXECUTING: dir = spcoin-back-end
+EXECUTING: processDir spcoin-back-end
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end
+EXECUTING: getFilePathList dir = spcoin-back-end
+EXECUTING: For dir in scripts spcoin-access-modules spcoin-weth-module-cjs
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+EXECUTING: dir = spcoin-access-modules
+EXECUTING: processDir spcoin-access-modules
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-access-modules
+EXECUTING: getFilePathList dir = spcoin-access-modules
+EXECUTING: For dir in dataTypes modules utils
+EXECUTING: dir = dataTypes
+EXECUTING: processDir dataTypes
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-access-modules/dataTypes
+EXECUTING: getFilePathList dir = dataTypes
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = modules
+\*\*\*Excluding Directory: modules
+EXECUTING: dir = utils
+EXECUTING: processDir utils
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-access-modules/utils
+EXECUTING: getFilePathList dir = utils
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spcoin-weth-module-cjs
+EXECUTING: processDir spcoin-weth-module-cjs
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-weth-module-cjs
+EXECUTING: getFilePathList dir = spcoin-weth-module-cjs
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spcoin-common
+EXECUTING: processDir spcoin-common
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common
+EXECUTING: getFilePathList dir = spcoin-common
+EXECUTING: For dir in scripts spcoin-lib
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+EXECUTING: dir = spcoin-lib
+EXECUTING: processDir spcoin-lib
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/spcoin-lib
+EXECUTING: getFilePathList dir = spcoin-lib
+EXECUTING: For dir in scripts
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spcoin-front-end
+EXECUTING: processDir spcoin-front-end
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-front-end
+EXECUTING: getFilePathList dir = spcoin-front-end
+EXECUTING: For dir in scripts
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+EXECUTING: dir = spcoin-docs
+EXECUTING: processDir spcoin-docs
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-docs
+EXECUTING: getFilePathList dir = spcoin-docs
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = spcoin-hardhat-contract-access-test
+EXECUTING: processDir spcoin-hardhat-contract-access-test
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test
+EXECUTING: getFilePathList dir = spcoin-hardhat-contract-access-test
+EXECUTING: For dir in abis artifacts cache contracts ignition node_modules scripts test.out test
+EXECUTING: dir = abis
+EXECUTING: processDir abis
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/abis
+EXECUTING: getFilePathList dir = abis
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = artifacts
+\*\*\*Excluding Directory: artifacts
+EXECUTING: dir = cache
+\*\*\*Excluding Directory: cache
+EXECUTING: dir = contracts
+EXECUTING: processDir contracts
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/contracts
+EXECUTING: getFilePathList dir = contracts
+EXECUTING: For dir in accounts dataTypes rewardsManagement utils
+EXECUTING: dir = accounts
+EXECUTING: processDir accounts
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/contracts/accounts
+EXECUTING: getFilePathList dir = accounts
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = dataTypes
+EXECUTING: processDir dataTypes
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/contracts/dataTypes
+EXECUTING: getFilePathList dir = dataTypes
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = rewardsManagement
+EXECUTING: processDir rewardsManagement
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/contracts/rewardsManagement
+EXECUTING: getFilePathList dir = rewardsManagement
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = utils
+EXECUTING: processDir utils
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/contracts/utils
+EXECUTING: getFilePathList dir = utils
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = ignition
+EXECUTING: processDir ignition
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/ignition
+EXECUTING: getFilePathList dir = ignition
+EXECUTING: For dir in modules
+EXECUTING: dir = modules
+\*\*\*Excluding Directory: modules
+________________________________________________________________________________
+EXECUTING: dir = node_modules
+\*\*\*Excluding Directory: node_modules
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+EXECUTING: dir = test.out
+EXECUTING: processDir test.out
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/test.out
+EXECUTING: getFilePathList dir = test.out
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = test
+EXECUTING: processDir test
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/test
+EXECUTING: getFilePathList dir = test
+EXECUTING: For dir in lib unit_JS_SPCOIN unit_JS_WETH
+EXECUTING: dir = lib
+EXECUTING: processDir lib
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/test/lib
+EXECUTING: getFilePathList dir = lib
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = unit_JS_SPCOIN
+EXECUTING: processDir unit_JS_SPCOIN
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/test/unit_JS_SPCOIN
+EXECUTING: getFilePathList dir = unit_JS_SPCOIN
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = unit_JS_WETH
+EXECUTING: processDir unit_JS_WETH
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/test/unit_JS_WETH
+EXECUTING: getFilePathList dir = unit_JS_WETH
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spcoin-jmeter-tests
+EXECUTING: processDir spcoin-jmeter-tests
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-jmeter-tests
+EXECUTING: getFilePathList dir = spcoin-jmeter-tests
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = spcoin-nextjs-front-end
+EXECUTING: processDir spcoin-nextjs-front-end
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end
+EXECUTING: getFilePathList dir = spcoin-nextjs-front-end
+EXECUTING: For dir in app components env lib node_modules public resources scripts styles
+EXECUTING: dir = app
+EXECUTING: processDir app
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app
+EXECUTING: getFilePathList dir = app
+EXECUTING: For dir in (menu) api tests
+EXECUTING: dir = (menu)
+EXECUTING: processDir (menu)
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)
+EXECUTING: getFilePathList dir = (menu)
+EXECUTING: For dir in Admin Exchange Recipient Test
+EXECUTING: dir = Admin
+EXECUTING: processDir Admin
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Admin
+EXECUTING: getFilePathList dir = Admin
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Exchange
+EXECUTING: processDir Exchange
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Exchange
+EXECUTING: getFilePathList dir = Exchange
+EXECUTING: For dir in DevTools Price Quote Test
+EXECUTING: dir = DevTools
+EXECUTING: processDir DevTools
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Exchange/DevTools
+EXECUTING: getFilePathList dir = DevTools
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Price
+EXECUTING: processDir Price
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Exchange/Price
+EXECUTING: getFilePathList dir = Price
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Quote
+EXECUTING: processDir Quote
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Exchange/Quote
+EXECUTING: getFilePathList dir = Quote
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Test
+EXECUTING: processDir Test
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Exchange/Test
+EXECUTING: getFilePathList dir = Test
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = Recipient
+EXECUTING: processDir Recipient
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Recipient
+EXECUTING: getFilePathList dir = Recipient
+EXECUTING: For dir in [address]
+EXECUTING: dir = [address]
+\*\*\*Excluding Directory: [address]
+________________________________________________________________________________
+EXECUTING: dir = Test
+EXECUTING: processDir Test
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/(menu)/Test
+EXECUTING: getFilePathList dir = Test
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = api
+EXECUTING: processDir api
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api
+EXECUTING: getFilePathList dir = api
+EXECUTING: For dir in 0X alchemy ethereum polygon sepoili wagmi
+EXECUTING: dir = 0X
+EXECUTING: processDir 0X
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X
+EXECUTING: getFilePathList dir = 0X
+EXECUTING: For dir in ethereum polygon sepolia
+EXECUTING: dir = ethereum
+EXECUTING: processDir ethereum
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/ethereum
+EXECUTING: getFilePathList dir = ethereum
+EXECUTING: For dir in price quote
+EXECUTING: dir = price
+EXECUTING: processDir price
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/ethereum/price
+EXECUTING: getFilePathList dir = price
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = quote
+EXECUTING: processDir quote
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/ethereum/quote
+EXECUTING: getFilePathList dir = quote
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = polygon
+EXECUTING: processDir polygon
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/polygon
+EXECUTING: getFilePathList dir = polygon
+EXECUTING: For dir in balanceOf price quote
+EXECUTING: dir = balanceOf
+EXECUTING: processDir balanceOf
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/polygon/balanceOf
+EXECUTING: getFilePathList dir = balanceOf
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = price
+EXECUTING: processDir price
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/polygon/price
+EXECUTING: getFilePathList dir = price
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = quote
+EXECUTING: processDir quote
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/polygon/quote
+EXECUTING: getFilePathList dir = quote
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = sepolia
+EXECUTING: processDir sepolia
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/sepolia
+EXECUTING: getFilePathList dir = sepolia
+EXECUTING: For dir in price quote
+EXECUTING: dir = price
+EXECUTING: processDir price
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/sepolia/price
+EXECUTING: getFilePathList dir = price
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = quote
+EXECUTING: processDir quote
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/0X/sepolia/quote
+EXECUTING: getFilePathList dir = quote
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = alchemy
+EXECUTING: processDir alchemy
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/alchemy
+EXECUTING: getFilePathList dir = alchemy
+EXECUTING: For dir in erc20
+EXECUTING: dir = erc20
+EXECUTING: processDir erc20
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/alchemy/erc20
+EXECUTING: getFilePathList dir = erc20
+EXECUTING: For dir in balanceOf
+EXECUTING: dir = balanceOf
+EXECUTING: processDir balanceOf
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/alchemy/erc20/balanceOf
+EXECUTING: getFilePathList dir = balanceOf
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = ethereum
+EXECUTING: processDir ethereum
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/ethereum
+EXECUTING: getFilePathList dir = ethereum
+EXECUTING: For dir in 0X
+EXECUTING: dir = 0X
+EXECUTING: processDir 0X
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/ethereum/0X
+EXECUTING: getFilePathList dir = 0X
+EXECUTING: For dir in price quote
+EXECUTING: dir = price
+EXECUTING: processDir price
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/ethereum/0X/price
+EXECUTING: getFilePathList dir = price
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = quote
+EXECUTING: processDir quote
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/ethereum/0X/quote
+EXECUTING: getFilePathList dir = quote
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = polygon
+EXECUTING: processDir polygon
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/polygon
+EXECUTING: getFilePathList dir = polygon
+EXECUTING: For dir in 0X balanceOf
+EXECUTING: dir = 0X
+EXECUTING: processDir 0X
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/polygon/0X
+EXECUTING: getFilePathList dir = 0X
+EXECUTING: For dir in price quote
+EXECUTING: dir = price
+EXECUTING: processDir price
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/polygon/0X/price
+EXECUTING: getFilePathList dir = price
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = quote
+EXECUTING: processDir quote
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/polygon/0X/quote
+EXECUTING: getFilePathList dir = quote
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = balanceOf
+EXECUTING: processDir balanceOf
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/polygon/balanceOf
+EXECUTING: getFilePathList dir = balanceOf
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = sepoili
+EXECUTING: processDir sepoili
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/sepoili
+EXECUTING: getFilePathList dir = sepoili
+EXECUTING: For dir in 0X
+EXECUTING: dir = 0X
+EXECUTING: processDir 0X
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/sepoili/0X
+EXECUTING: getFilePathList dir = 0X
+EXECUTING: For dir in price quote
+EXECUTING: dir = price
+EXECUTING: processDir price
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/sepoili/0X/price
+EXECUTING: getFilePathList dir = price
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = quote
+EXECUTING: processDir quote
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/sepoili/0X/quote
+EXECUTING: getFilePathList dir = quote
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = wagmi
+EXECUTING: processDir wagmi
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/wagmi
+EXECUTING: getFilePathList dir = wagmi
+EXECUTING: For dir in erc20
+EXECUTING: dir = erc20
+EXECUTING: processDir erc20
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/wagmi/erc20
+EXECUTING: getFilePathList dir = erc20
+EXECUTING: For dir in balanceOf
+EXECUTING: dir = balanceOf
+EXECUTING: processDir balanceOf
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/api/wagmi/erc20/balanceOf
+EXECUTING: getFilePathList dir = balanceOf
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = tests
+EXECUTING: processDir tests
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/tests
+EXECUTING: getFilePathList dir = tests
+EXECUTING: For dir in ERC20
+EXECUTING: dir = ERC20
+EXECUTING: processDir ERC20
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/app/tests/ERC20
+EXECUTING: getFilePathList dir = ERC20
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = components
+EXECUTING: processDir components
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components
+EXECUTING: getFilePathList dir = components
+EXECUTING: For dir in Buttons containers Dialogs ERC20 Headers panes Popover Wrappers
+EXECUTING: dir = Buttons
+EXECUTING: processDir Buttons
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/Buttons
+EXECUTING: getFilePathList dir = Buttons
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = containers
+EXECUTING: processDir containers
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/containers
+EXECUTING: getFilePathList dir = containers
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Dialogs
+EXECUTING: processDir Dialogs
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/Dialogs
+EXECUTING: getFilePathList dir = Dialogs
+EXECUTING: For dir in Resources
+EXECUTING: dir = Resources
+EXECUTING: processDir Resources
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/Dialogs/Resources
+EXECUTING: getFilePathList dir = Resources
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = ERC20
+EXECUTING: processDir ERC20
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/ERC20
+EXECUTING: getFilePathList dir = ERC20
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Headers
+EXECUTING: processDir Headers
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/Headers
+EXECUTING: getFilePathList dir = Headers
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = panes
+EXECUTING: processDir panes
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/panes
+EXECUTING: getFilePathList dir = panes
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Popover
+EXECUTING: processDir Popover
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/Popover
+EXECUTING: getFilePathList dir = Popover
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = Wrappers
+EXECUTING: processDir Wrappers
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/components/Wrappers
+EXECUTING: getFilePathList dir = Wrappers
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = env
+\*\*\*Excluding Directory: env
+EXECUTING: dir = lib
+EXECUTING: processDir lib
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib
+EXECUTING: getFilePathList dir = lib
+EXECUTING: For dir in 0X context hooks network spCoin structure wagmi
+EXECUTING: dir = 0X
+EXECUTING: processDir 0X
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/0X
+EXECUTING: getFilePathList dir = 0X
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = context
+EXECUTING: processDir context
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/context
+EXECUTING: getFilePathList dir = context
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = hooks
+EXECUTING: processDir hooks
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/hooks
+EXECUTING: getFilePathList dir = hooks
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = network
+EXECUTING: processDir network
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/network
+EXECUTING: getFilePathList dir = network
+EXECUTING: For dir in initialize
+EXECUTING: dir = initialize
+EXECUTING: processDir initialize
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/network/initialize
+EXECUTING: getFilePathList dir = initialize
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spCoin
+EXECUTING: processDir spCoin
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/spCoin
+EXECUTING: getFilePathList dir = spCoin
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = structure
+EXECUTING: processDir structure
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/structure
+EXECUTING: getFilePathList dir = structure
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = wagmi
+EXECUTING: processDir wagmi
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/lib/wagmi
+EXECUTING: getFilePathList dir = wagmi
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = node_modules
+\*\*\*Excluding Directory: node_modules
+EXECUTING: dir = public
+EXECUTING: processDir public
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public
+EXECUTING: getFilePathList dir = public
+EXECUTING: For dir in resources
+EXECUTING: dir = resources
+EXECUTING: processDir resources
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources
+EXECUTING: getFilePathList dir = resources
+EXECUTING: For dir in images
+EXECUTING: dir = images
+EXECUTING: processDir images
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources/images
+EXECUTING: getFilePathList dir = images
+EXECUTING: For dir in agents chains miscellaneous networks recipients tokens
+EXECUTING: dir = agents
+EXECUTING: processDir agents
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources/images/agents
+EXECUTING: getFilePathList dir = agents
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = chains
+EXECUTING: processDir chains
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources/images/chains
+EXECUTING: getFilePathList dir = chains
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = miscellaneous
+EXECUTING: processDir miscellaneous
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources/images/miscellaneous
+EXECUTING: getFilePathList dir = miscellaneous
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = networks
+EXECUTING: processDir networks
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources/images/networks
+EXECUTING: getFilePathList dir = networks
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = recipients
+EXECUTING: processDir recipients
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources/images/recipients
+EXECUTING: getFilePathList dir = recipients
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = tokens
+EXECUTING: processDir tokens
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/public/resources/images/tokens
+EXECUTING: getFilePathList dir = tokens
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = resources
+EXECUTING: processDir resources
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources
+EXECUTING: getFilePathList dir = resources
+EXECUTING: For dir in data docs
+EXECUTING: dir = data
+EXECUTING: processDir data
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data
+EXECUTING: getFilePathList dir = data
+EXECUTING: For dir in ABIs agents networks recipients
+EXECUTING: dir = ABIs
+EXECUTING: processDir ABIs
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/ABIs
+EXECUTING: getFilePathList dir = ABIs
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = agents
+EXECUTING: processDir agents
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/agents
+EXECUTING: getFilePathList dir = agents
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = networks
+EXECUTING: processDir networks
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks
+EXECUTING: getFilePathList dir = networks
+EXECUTING: For dir in ethereum hardhat polygon sepolia
+EXECUTING: dir = ethereum
+EXECUTING: processDir ethereum
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/ethereum
+EXECUTING: getFilePathList dir = ethereum
+EXECUTING: For dir in initialize
+EXECUTING: dir = initialize
+EXECUTING: processDir initialize
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/ethereum/initialize
+EXECUTING: getFilePathList dir = initialize
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = hardhat
+EXECUTING: processDir hardhat
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/hardhat
+EXECUTING: getFilePathList dir = hardhat
+EXECUTING: For dir in initialize
+EXECUTING: dir = initialize
+EXECUTING: processDir initialize
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/hardhat/initialize
+EXECUTING: getFilePathList dir = initialize
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = polygon
+EXECUTING: processDir polygon
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/polygon
+EXECUTING: getFilePathList dir = polygon
+EXECUTING: For dir in initialize
+EXECUTING: dir = initialize
+EXECUTING: processDir initialize
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/polygon/initialize
+EXECUTING: getFilePathList dir = initialize
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = sepolia
+EXECUTING: processDir sepolia
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/sepolia
+EXECUTING: getFilePathList dir = sepolia
+EXECUTING: For dir in initialize
+EXECUTING: dir = initialize
+EXECUTING: processDir initialize
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/networks/sepolia/initialize
+EXECUTING: getFilePathList dir = initialize
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = recipients
+EXECUTING: processDir recipients
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/data/recipients
+EXECUTING: getFilePathList dir = recipients
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = docs
+EXECUTING: processDir docs
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/resources/docs
+EXECUTING: getFilePathList dir = docs
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = scripts
+\*\*\*Excluding Directory: scripts
+EXECUTING: dir = styles
+EXECUTING: processDir styles
+Replacing installScript /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: getFilePathList /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/styles
+EXECUTING: getFilePathList dir = styles
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+sortedUniqueText=/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+=============== dumpArray ============================
+/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh
+/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/scripts/installNodeModules.sh
+/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh
+
+============== updateInstallScripts ===================
+SETTING FIRST ENTRY: scrScript=/c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+EXECTTING: cp -f /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh
+EXECTTING: cp -f /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/scripts/installNodeModules.sh
+EXECTTING: cp -f /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+EXECTTING: cp -f /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+EXECTTING: cp -f /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh /c/Users/Robin/spCoin/JUNK2/SPCOIN-PROJECT-MODULES/spcoin-nextjs-front-end/scripts/installNodeModules.sh

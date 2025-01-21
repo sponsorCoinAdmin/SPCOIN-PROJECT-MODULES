@@ -19,8 +19,8 @@ clear
 echo "===================== SPCOIN-PROJECT-MODULES ==============================="
 
 echo HERE 1
-exeIfDirExists $SPCOIN_BE_PATH "npm i"
+exeIfDirExists $SPCOIN_BE_PATH ". ./scripts/installNodeSubModules.sh"
 echo HERE 2
-exeIfDirExists $SPCOIN_FE_PATH "npm i"
+exeIfDirExists $SPCOIN_FE_PATH ". ./scripts/installNodeSubModules.sh"
 echo HERE 3
 echo ===== FINISHED INSTALLING SPONSORCOIN NPM MODULES in $(PWD) =====
