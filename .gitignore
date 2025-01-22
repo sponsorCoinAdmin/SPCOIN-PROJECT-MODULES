@@ -4,3 +4,5 @@ JUNK/*
 .env
 */.e
 */.env
+us.log
+*.log

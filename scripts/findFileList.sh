@@ -39,22 +39,6 @@ dumpArray() {
      done
 }
 
-updateArrayScripts() {
-    local arr=$@
-    local scrScript=""
-    echo ============== updateInstallScripts ===================
-    for element in $arr
-    do
-    	if [ "$scrScript" = "" ]; then
-            scrScript=$element
-            echo "SETTING FIRST ENTRY: scrScript=$scrScript"
-        else
-            echo EXECUTING: cp -f $scrScript $element
-            cp -f $scrScript $element
-        fi
-    done
-}
-
 sortUniqueTextArray() {
     local unsortedArray=$@
      IFS=" " read -r -a sortedUniqueArray <<< "$(tr ' ' '\n' <<< "${unsortedArray[@]}" | sort -u | tr '\n' ' ')"
@@ -106,31 +90,3 @@ buildFileSearchList () {
     done
     underLine 80
 }
-
-updateInstallScripts() {
-    echo "updateInstallScripts(): PDW=$PWD"
-    INSTALL_SCRIPT="scripts/installNodeModules.sh"
-    ExclusionList=(
-        "artifacts"
-        "node_modules"
-        "scripts"
-        "\.env"
-        "\.e"
-        "cache")
-    ExclusionStr="${ExclusionList[@]}"
-
-    doubleLine 80
-    searchFile=$INSTALL_SCRIPT
-    singleLine 80
-
-    getFilePathList $searchFile $ExclusionStr
-    #myFileList=$(getFilePathList $searchFile)
-
-    sortedUniqueText=$(sortUniqueTextArray $scriptList)
-    echo sortedUniqueText=$sortedUniqueText
-    dumpArray $sortedUniqueText
-    echo
-    updateArrayScripts $sortedUniqueText
-}
-
-updateInstallScripts
