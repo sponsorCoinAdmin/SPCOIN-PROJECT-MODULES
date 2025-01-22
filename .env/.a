@@ -27,7 +27,7 @@ alias hhcompile="sethh; npx hardhat compile"
 # NPM SETUP
 alias npmi="npm install @sponsorcoin/spcoin-access-modules"
 
-alias rt="clear; . ./scripts/installNodeModules.sh 0"
+alias rt="clear; . ./scripts/installNodeModules.sh"
 alias vt="vi ./scripts/installNodeModules.sh"
 alias ins=". ./scripts/installNewScripts.sh"
 alias inm="clear; . ./scripts/installNodeModules.sh"
