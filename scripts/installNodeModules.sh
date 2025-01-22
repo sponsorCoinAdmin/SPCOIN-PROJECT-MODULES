@@ -1,4 +1,5 @@
 . ./scripts/findFileList.sh
+CURR_DIR=$PWD
 SEARCH_FILE="package.json"
 ExclusionList=(
     "artifacts"
@@ -9,13 +10,19 @@ ExclusionList=(
     "cache")
 ExclusionStr="${ExclusionList[@]}"
 
-installNodeModules() {
+installArrayModules() {
     local arr=$@
-    echo ============== installNodeModules ===================
+    echo =========================================== installNodeModules ===============================================
+    echo EXECUTION DIRECTORY: $CURR_DIR
+    doubleLine 110
     for element in $arr
     do
-         echo EXECUTING: npm -i $SEARCH_FILE
-         # npm -i $SEARCH_FILE
+         parentdir="$(dirname "$element")"
+	 echo EXECUTING: cd $parentdir
+         echo EXECUTING installNodeModules: npm -i $SEARCH_FILE
+         # npm -i $element
+	 echo EXECUTING: cd $CURR_DIR
+	 singleLine 110
     done
 }
 
@@ -34,8 +41,8 @@ installNodeModules() {
     echo sortedUniqueText=$sortedUniqueText
     dumpArray $sortedUniqueText
     echo
-    installNodeModules $sortedUniqueText
+    echo  sortedUniqueText=$sortedUniqueText
+    installArrayModules $sortedUniqueText
 }
 
 installNodeModules
-

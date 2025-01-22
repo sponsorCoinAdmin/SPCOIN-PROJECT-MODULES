@@ -27,17 +27,20 @@ alias hhcompile="sethh; npx hardhat compile"
 # NPM SETUP
 alias npmi="npm install @sponsorcoin/spcoin-access-modules"
 
-alias rt="clear; . ./scripts/installNodeModules.sh"
-alias vt="vi ./scripts/installNodeModules.sh"
-alias ins=". ./scripts/installNewScripts.sh"
-alias inm="clear; . ./scripts/installNodeModules.sh"
-alias ruis="clear; . ./scripts/updateInstallScripts.sh | tee uis.log"
-alias vuis="vi ./scripts/updateInstallScripts.sh"
-alias vfl="vi ./scripts/findFileList.sh"
-alias vin="vi ./scripts/installNodeModules.sh"
+
 alias home="cd  ~/spCoin/JUNK2/SPCOIN-PROJECT-MODULES"
 
-alias t="clear; . ./arrsort.sh | tee arrsort.log"
-alias vta="vi ./arrsort.sh"
-alias rta=". ./arrsort.sh"
+#alias ins=". ./scripts/installNewScripts.sh | tee ins.log"
 
+alias inm="clear; . ./scripts/installNodeModules.sh | tee inm.log"
+alias vinm="vi ./scripts/installNodeModules.sh"
+
+alias ruis="clear; . ./scripts/updateInstallScripts.sh | tee uis.log"
+alias vuis="vi ./scripts/updateInstallScripts.sh"
+
+alias vfl="vi ./scripts/findFileList.sh"
+
+
+alias rt="inm"
+alias vt="vinm"
+alias vl="vi inm.log"
