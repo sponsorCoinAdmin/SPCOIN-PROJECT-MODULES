@@ -23,3 +23,18 @@ alias idsm="installDevSubModules"
 
 alias remixd="nohup node $PROJECT_HOME/node_modules/@remix-project/remixd/src/bin/remixd.js 2>&1 > $LOGS_DIR/remixd.out &"
 alias hhcompile="sethh; npx hardhat compile"
+
+# NPM SETUP
+alias npmi="npm install @sponsorcoin/spcoin-access-modules"
+
+alias rt="clear; . ./scripts/installNodeModules.sh 0"
+alias vt="vi ./scripts/installNodeModules.sh"
+alias is=". ./scripts/installNewScripts.sh"
+alias us="clear;. ./scripts/updateInstallScripts.sh | tee us.log"
+alias vus="vi ./scripts/updateInstallScripts.sh"
+alias home="cd  ~/spCoin/JUNK2/SPCOIN-PROJECT-MODULES"
+
+alias t="clear; . ./arrsort.sh | tee arrsort.log"
+alias vta="vi ./arrsort.sh"
+alias rta=". ./arrsort.sh"
+

@@ -1,0 +1,166 @@
+updateInstallScripts(): PDW=/c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES
+================================================================================
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES
+EXECUTING: buildFileSearchList dir =
+EXECUTING: For dir in ~home node_modules-dev scripts spcoin-docs spcoin-hardhat-contract-access-test spcoin-jmeter-tests spcoin-nextjs-front-end
+EXECUTING: dir = ~home
+EXECUTING: processDir ~home
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/~home
+EXECUTING: buildFileSearchList dir = ~home
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = node_modules-dev
+EXECUTING: processDir node_modules-dev
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev
+EXECUTING: buildFileSearchList dir = node_modules-dev
+EXECUTING: For dir in scripts spcoin-back-end spcoin-common spcoin-front-end
+EXECUTING: dir = scripts
+EXECUTING: processDir scripts
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts
+EXECUTING: buildFileSearchList dir = scripts
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = spcoin-back-end
+EXECUTING: processDir spcoin-back-end
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end
+EXECUTING: buildFileSearchList dir = spcoin-back-end
+EXECUTING: For dir in scripts spcoin-access-modules spcoin-weth-module-cjs
+EXECUTING: dir = scripts
+EXECUTING: processDir scripts
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts
+EXECUTING: buildFileSearchList dir = scripts
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = spcoin-access-modules
+EXECUTING: processDir spcoin-access-modules
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-access-modules
+EXECUTING: buildFileSearchList dir = spcoin-access-modules
+EXECUTING: For dir in dataTypes modules utils
+EXECUTING: dir = dataTypes
+EXECUTING: processDir dataTypes
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-access-modules/dataTypes
+EXECUTING: buildFileSearchList dir = dataTypes
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = modules
+EXECUTING: processDir modules
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-access-modules/modules
+EXECUTING: buildFileSearchList dir = modules
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = utils
+EXECUTING: processDir utils
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-access-modules/utils
+EXECUTING: buildFileSearchList dir = utils
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spcoin-weth-module-cjs
+EXECUTING: processDir spcoin-weth-module-cjs
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-back-end/spcoin-weth-module-cjs
+EXECUTING: buildFileSearchList dir = spcoin-weth-module-cjs
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spcoin-common
+EXECUTING: processDir spcoin-common
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common
+EXECUTING: buildFileSearchList dir = spcoin-common
+EXECUTING: For dir in scripts spcoin-lib
+EXECUTING: dir = scripts
+EXECUTING: processDir scripts
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/scripts
+EXECUTING: buildFileSearchList dir = scripts
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = spcoin-lib
+EXECUTING: processDir spcoin-lib
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/spcoin-lib
+EXECUTING: buildFileSearchList dir = spcoin-lib
+EXECUTING: For dir in scripts
+EXECUTING: dir = scripts
+EXECUTING: processDir scripts
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/spcoin-lib/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-common/spcoin-lib/scripts
+EXECUTING: buildFileSearchList dir = scripts
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = spcoin-front-end
+EXECUTING: processDir spcoin-front-end
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-front-end
+EXECUTING: buildFileSearchList dir = spcoin-front-end
+EXECUTING: For dir in scripts
+EXECUTING: dir = scripts
+EXECUTING: processDir scripts
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-front-end/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/node_modules-dev/spcoin-front-end/scripts
+EXECUTING: buildFileSearchList dir = scripts
+EXECUTING: For dir in
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+EXECUTING: dir = scripts
+EXECUTING: processDir scripts
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/scripts
+EXECUTING: buildFileSearchList dir = scripts
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = spcoin-docs
+EXECUTING: processDir spcoin-docs
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/spcoin-docs
+EXECUTING: buildFileSearchList dir = spcoin-docs
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = spcoin-hardhat-contract-access-test
+EXECUTING: processDir spcoin-hardhat-contract-access-test
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test
+EXECUTING: buildFileSearchList dir = spcoin-hardhat-contract-access-test
+EXECUTING: For dir in abis contracts ignition scripts test.out test
+EXECUTING: dir = abis
+EXECUTING: processDir abis
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh
+--------------------------------------------------------------------------------
+EXECUTING: buildFileSearchList /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/abis
+EXECUTING: buildFileSearchList dir = abis
+EXECUTING: For dir in
+________________________________________________________________________________
+EXECUTING: dir = contracts
+EXECUTING: processDir contracts
+FoundFilePath /c/Users/Robin/spcoin/SPCOIN-PROJECT-MODULES/spcoin-hardhat-contract-access-test/scripts/installNodeModules.sh

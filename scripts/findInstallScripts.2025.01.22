@@ -1,6 +1,5 @@
 echo PDW=$PWD
 INSTALL_SCRIPT="scripts/installNodeModules.sh"
-searchFile=$PWD/$INSTALL_SCRIPT
 ExclusionList=(
     "artifacts"
     "node_modules"
@@ -9,7 +8,6 @@ ExclusionList=(
     "\.e"
     "cache")
 ExclusionStr="${ExclusionList[@]}"
-
 
 repeat(){
     char=$1
@@ -62,7 +60,7 @@ updateInstallScripts() {
             scrScript=$element
             echo "SETTING FIRST ENTRY: scrScript=$scrScript"
         else
-            echo EXECTTING: cp -f $scrScript $element
+            echo EXECUTING: cp -f $scrScript $element
             cp -f $scrScript $element
         fi
     done
@@ -78,11 +76,20 @@ sortUniqueTextArray() {
 scriptList=""
 
 getFilePathList () {
-    fileList=$1
+    local searchFile=$1
+    local exclusionList=$2
+    scriptList=""
+    buildFileSearchList $searchFile $exclusionList
+    echo scriptList
+}
+
+buildFileSearchList () {
+    local searchFile=$1
+    local exclusionList=$2
     singleLine 80
 
-    echo EXECUTING: getFilePathList $(PWD)
-    echo EXECUTING: getFilePathList dir = $dir
+    echo EXECUTING: buildFileSearchList $(PWD)
+    echo EXECUTING: buildFileSearchList dir = $dir
     dirs=$(echo "$(ls -d */)" | sed "s/["//"]//g")
     echo EXECUTING: For dir in $dirs
 
@@ -91,32 +98,32 @@ getFilePathList () {
     do
         echo EXECUTING:  dir = $dir
 
-        foundDir=$(echo $ExclusionStr | grep $dir)
+        foundDir=$(echo $ExclusionList | grep $dir)
         
         if [ "$foundDir" != "" ]; then
             echo "\*\*\*Excluding Directory: $dir"
         else
             echo EXECUTING: processDir $dir
-            script=$(ls ./$INSTALL_SCRIPT)
+            script=$(ls ./$searchFile)
 
             if [ "$script" != "" ]; then
-                scriptList+=$PWD/$INSTALL_SCRIPT" "
-                echo Replacing installScript $PWD/$INSTALL_SCRIPT
+                scriptList+=$PWD/$searchFile" "
+                echo FoundFilePath $PWD/$searchFile
             fi
             cd $dir
-            getFilePathList
+            buildFileSearchList $searchFile
             cd .. 
-            # processDir $dir
         fi
     done
     underLine 80
 }
 
 doubleLine 80
-echo searchFile=$searchFile
+searchFile=$INSTALL_SCRIPT
 singleLine 80
 
-getFilePathList $searchFIle
+getFilePathList $searchFile $ExclusionStr
+#myFileList=$(getFilePathList $searchFile)
 
 sortedUniqueText=$(sortUniqueTextArray $scriptList)
 echo sortedUniqueText=$sortedUniqueText
