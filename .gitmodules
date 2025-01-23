@@ -1,6 +1,3 @@
-[submodule "spcoin-jmeter-tests"]
-	path = spcoin-jmeter-tests
-	url = git@github.com:sponsorCoinAdmin/spcoin-jmeter-tests.git
 [submodule "spcoin-docs"]
 	path = spcoin-docs
 	url = git@github.com:sponsorCoinAdmin/spcoin-docs.git
