@@ -19,9 +19,12 @@ installArrayModules() {
     do
          parentdir="$(dirname "$element")"
 	 echo EXECUTING: cd $parentdir
-         echo EXECUTING installNodeModules: npm -i $SEARCH_FILE
-         # npm -i $element
+	 cd $parentdir
+         echo IN DIRECTORY $PWD
+         echo EXECUTING installNodeModules: npm i
+         npm i
 	 echo EXECUTING: cd $CURR_DIR
+	 cd $CURR_DIR
 	 singleLine 110
     done
 }
