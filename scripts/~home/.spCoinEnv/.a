@@ -1,0 +1,32 @@
+alias a=". ~/.spCoinEnv/.a"
+alias m=". ~/.spCoinEnv/.m"
+alias setsh=". ~/$SHELL_PROFILE"
+alias rmel="ssh -i ~/.ssh/keys/rmelanson-privateKey.pem rmelanson@www.sponsorcoin.org"
+alias skal="ssh -i ~/.ssh/keys/skaleis-privateKey.pem skaleis@www.sponsorcoin.org"
+alias csh="clear; cat ~/$SHELL_PROFILE"
+alias cdbm="cdgetrepo; cd ./Tutorials/blockmanCodes"
+alias cdgitrepo="cd /c/Users/robin/OneDrive/Dev/gitRepo"
+alias cddev="cd /c/Users/robin/OneDrive/Dev"
+alias cdtest="cdwip; cd ./TEST"
+alias cdprod="cdsc; cd './PROD (WORKING)'"
+alias cdwip="cdsc; cd ./WIP"
+
+alias cdssh="cd ~/.ssh"
+alias cddev="cdsc; cd .DEV"
+alias startremix="cddev; remixd -s . &"
+alias vsh="vi ~/$SHELL_PROFILE; setsh"
+alias va="vi ~/.spCoinEnv/.a;a"
+alias vm="vi ~/.spCoinEnv/.m;m"
+alias vs="code"
+
+################### SPCOIN STUFF #########################
+alias cdsc="cd ~/spcoin"
+alias cdspc="cd ~/spcoin/$ACTIVE_PROJECT_NAME"
+alias rmsc="csc; rm -rf $ACTIVE_PROJECT_NAME"
+alias vscs="vi ~/spCoinSetup; . ~/spCoinSetup"
+alias cscs="cat ~/spCoinSetup"
+
+alias setupspcoin=". ~/.spCoinEnv/SpCoinSetup"
+alias vsetup="vi ~/.spCoinEnv/SpCoinSetup"
+alias cloneproj="clear;  setSpCoinEnv; cloneSponsorCoinProjects;"
+

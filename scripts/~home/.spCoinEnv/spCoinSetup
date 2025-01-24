@@ -1,3 +1,8 @@
+echo "EXECUTING . ~/.spCoinEnv/spCOINsetup"
+. ~/.spCoinEnv/.a
+
+alias cloneproj="clear;  setSpCoinEnv; cloneSponsorCoinProjects;"
+
 
 alias initSpCoinEnv="export CLONE_PROJECT_LOG=CLONE_PROJECT.log ;
               	     export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES ;
