@@ -22,57 +22,63 @@ alias echoSpCoinEnv="echo CLONE_PROJECT_LOG=\$CLONE_PROJECT_LOG;
 alias cloneproj="clear; cloneSponsorCoinProjects;"
 alias cdspc="cd ~/spcoin/\$SPCOIN-PROJECT-MODULES"
 
+junk() {
+    echo EXECUTING JUNK FUNCTION
+}
+
+evalInstallScript () {
+    local scriptName=$1
+    echo "========================== $scriptName ==============================="
+    shift;  # will remove first arg from the "$@"
+    local "CURR_DIR=$PWD"
+    echo CURR_DIR: $CURR_DIR
+    echo EXECUTING: "cd $ACTIVE_PROJECT_HOME"
+    cd $ACTIVE_PROJECT_HOME
+    echo "IN PROJECT ROOT DIRECTORY: $PWD"
+    echo "EXECUTING INSTALL SCRIPT: eval $@"
+    eval "$@"
+    cd $CURR_DIR
+    echo RESTORED DIRECTORY LOCATION: $CURR_DIR
+}
+
 installGitModules() {
-    echo "############# INSTALL GIT MODULES ############"
-    echo "IN ROOT DIRECTORY: $ACTIVE_PROJECT_ROOT"
-    echo "EXECUTING: git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git";
-    git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git;
-    echo "EXECUTING: . ./scripts/setupEnvVars.sh";
-    cd $ACTIVE_PROJECT_NAME
-    . ./scripts/setupEnvAliases.sh;
-    echo "ACTIVE_PROJECT_NAME : $ACTIVE_PROJECT_NAME"
-    echo "ACTIVE_PROJECT_ROOT : $ACTIVE_PROJECT_ROOT"
-    echo "ACTIVE_PROJECT_HOME : $ACTIVE_PROJECT_HOME"
+    clear
+    echo "============================ initSpCoinEnv ==============================="
+    initSpCoinEnv
+    echoSpCoinEnv
+    echo "========================= installGitModules ==============================="
+    echo PROJECT PARENT DIR: $PWD
+    script="git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git"
+    echo "EXECUTING INSTALL SCRIPT: eval $script"
+    eval "$script"
 }
 
 installSecurityKeys() {
-    echo "############# INSTALL LOCAL SECURITY KEYS ############"
-    cd $ACTIVE_PROJECT_HOME
-    echo "EXECUTING: cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;"
-    cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f;
-    echo "EXECUTING: cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end"
-    cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f;
-    echo "ACTIVE_PROJECT_NAME : $ACTIVE_PROJECT_NAME"
-    echo "ACTIVE_PROJECT_ROOT : $ACTIVE_PROJECT_ROOT"
-    echo "ACTIVE_PROJECT_HOME : $ACTIVE_PROJECT_HOME"
+    script="cp -f ~/SECURITY/.env spcoin-hardhat-contract-access-test"
+    evalInstallScript "installSecurityKeys" $script
+    script="cp -f ~/SECURITY/.env.local ./spcoin-nextjs-front-end"
+    evalInstallScript "installSecurityKeys" $script
 }
 
 installAliases() {
-    echo ############## INSTALL PROJECecho ############T ALIASES ############"
-    echo HERE 1 current dir = $PWD
-    echo "EXECUTING: . ./scripts/setupEnvAliases.sh";
-    echo HERE 2 current dir = $PWD
-    . ./scripts/setupEnvAliases.sh;
-    echo HERE 3 current dir = $PWD
-    setroot
-    echo HERE 4 current dir = $PWD
-    cd $ACTIVE_PROJECT_HOME
-    echo HERE 5 current dir = $PWD
+    script=". ./scripts/setupEnvAliases.sh"
+    evalInstallScript "installAliases" $script
 }
 
 installNodeModules() {
-    echo ############# INSTALL NODE MODULES ############"
-    cd $ACTIVE_PROJECT_HOME
-    echo "EXECUTING: . ./scripts/installNodeModules.sh";
-    . ./scripts/installNodeModules.sh
+    script=". ./scripts/installNodeModules.sh"
+    evalInstallScript "installNodeModules" $script
+}
+
+
+cloneSponsorCoinProjects() {
+    initSpCoinEnv
+    installGitModules   2>&1 | tee    $CLONE_PROJECT_LOG
+    installSecurityKeys 2>&1 | tee -a $CLONE_PROJECT_LOG
+    installAliases      2>&1 | tee -a $CLONE_PROJECT_LOG
+    installNodeModules  2>&1 | tee -a $CLONE_PROJECT_LOG
     echo "EXECUTING: setroot";
     setroot
 }
 
-cloneSponsorCoinProjects() {
-    initSpCoinEnv       2>&1 | tee    $CLONE_PROJECT_LOG
-    installGitModules   2>&1 | tee -a $CLONE_PROJECT_LOG
-    installSecurityKeys 2>&1 | tee -a $CLONE_PROJECT_LOG
-    installAliases      2>&1 | tee -a $CLONE_PROJECT_LOG
-    installNodeModules  2>&1 | tee -a $CLONE_PROJECT_LOG
-}
+#########################################################################
