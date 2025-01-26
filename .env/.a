@@ -15,7 +15,6 @@ alias cdhh="cdbe"
 alias setroot="cdroot; . ./scripts/setupEnvAliases.sh;m"
 alias setfe="cdfe; . ./scripts/setupEnvAliases.sh;m"
 alias setbe="cdbe; . ./scripts/setupEnvAliases.sh;m"
-alias vbrc="vi ~/.bashrc"
 alias vs="code"
 
 alias installDevSubModules="npm run installDevSubModules"
