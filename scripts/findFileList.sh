@@ -50,7 +50,8 @@ scriptList=""
 
 getFilePathList () {
     local searchFile=$1
-    local exclusionList=$2
+    shift
+    local exclusionList=$@
     scriptList=""
     buildFileSearchList $searchFile $exclusionList
     echo scriptList
@@ -58,10 +59,11 @@ getFilePathList () {
 
 buildFileSearchList () {
     local searchFile=$1
-    local exclusionList=$2
+    shift
+    local exclusionList=$@
     singleLine 80
 
-    echo EXECUTING: buildFileSearchList $(PWD)
+    echo EXECUTING: buildFileSearchList $(PWD) $exclusionList
     echo EXECUTING: buildFileSearchList dir = $dir
     dirs=$(echo "$(ls -d */)" | sed "s/["//"]//g")
     echo EXECUTING: For dir in $dirs
@@ -84,7 +86,7 @@ buildFileSearchList () {
                 echo FoundFilePath $PWD/$searchFile
             fi
             cd $dir
-            buildFileSearchList $searchFile
+            buildFileSearchList $searchFile $exclusionList
             cd .. 
         fi
     done
