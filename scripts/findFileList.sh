@@ -50,7 +50,8 @@ scriptList=""
 
 getFilePathList () {
     local searchFile=$1
-    local exclusionList=$2
+    shift
+    local exclusionList=$@
     scriptList=""
     buildFileSearchList $searchFile $exclusionList
     echo scriptList
@@ -58,7 +59,8 @@ getFilePathList () {
 
 buildFileSearchList () {
     local searchFile=$1
-    local exclusionList=$2
+    shift
+    local exclusionList=$@
     singleLine 80
 
     echo EXECUTING: buildFileSearchList $(PWD) $exclusionList
