@@ -1,12 +1,5 @@
-<p style="font-size: 10px; font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">                       
-
-\# SIGNER WALLET ACCESS KEYS (OPTIONAL IF ACCESSING WALLET)
-WALLET_ADDRESS="(Put your Wallet(Example Metamask) account PUBLIC address Here)"
-WALLET_SECRET="(Put your Wallet(Example Metamask) account PRIVATE address Here)"
-
-\# STANDARD BURN ADDRESS
-BURN_ADDRESS = "0x0000000000000000000000000000000000000000"
-
+<p style="font-size: 6px; font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">                       
+    
 \# ETHERSCAN API KEY
 ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
 
