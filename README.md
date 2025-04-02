@@ -17,8 +17,44 @@ alias vs="code"
 
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 
-# PREREQUSITES prior to running the Installation script
+## PREREQUSITES prior to running the Installation script
 create a directory called <b>SECURITY</b>.
+In this directory, create two files. <b>.env</b> and <b>.env.local</b>
+<b>.env ~ </b> Required for back end processing
+<b>.env.local ~ </b> Required for nextjs fronr nen processing
+
+### .env (A short Example File)
+# COPY THIS FILE to project directory spcoin-hardhat-contracts-js-access/.e 
+
+<p style="font-family: 'Courier New', Courier, monospace;">
+#####################################################
+# PRIVATE REQUIRED ADDRESSES                        #
+#####################################################
+
+# SIGNER WALLET ACCESS KEYS (OPTIONAL IF ACCESSING WALLET)
+WALLET_ADDRESS="(Put your Wallet(Example Metamask) account PUBLIC address Here)"
+WALLET_SECRET="(Put your Wallet(Example Metamask) account PRIVATE address Here)"
+
+# STANDARD BURN ADDRESS
+BURN_ADDRESS = "0x0000000000000000000000000000000000000000"
+
+# ETHERSCAN API KEY
+ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
+
+# ALCHEMY NETWORK KEYS
+GOERLI_ALCHEMY_TEST_URL="(Put your GOERLI ALCHEMY public Key Here)"
+SEPOLIA_ALCHEMY_TEST_URL="(Put your SEPOLI ALCHEMY public Key Here)"
+MAINNET_ALCHEMY_TEST_URL="(Put your MAINNET ALCHEMY public Key Here)"
+POLYGON_ALCHEMY_TEST_URL="(Put your POLYGON ALCHEMY public Key Here)"
+
+# INFURA NETWORK KEYS
+GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"
+SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"
+MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"
+</p>
+
+
+### .env.local (Example File)
 
 
 ## Install and run the following script
