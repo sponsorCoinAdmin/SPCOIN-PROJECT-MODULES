@@ -26,7 +26,6 @@ In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 ### .env (A short Example File)
 \# COPY THIS FILE to project directory spcoin-hardhat-contracts-js-access/.e 
 
-<p style="font-size: 10px; font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">
 #####################################################
 # PRIVATE REQUIRED ADDRESSES                        
 #####################################################
@@ -51,7 +50,6 @@ POLYGON_ALCHEMY_TEST_URL="(Put your POLYGON ALCHEMY public Key Here)"
 GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"
 SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"
 MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"
-</p>
 
 
 
