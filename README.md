@@ -1,7 +1,4 @@
-<p style="font-size: 10px; font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">
-\#####################################################
-\# PRIVATE REQUIRED ADDRESSES                        
-\#####################################################
+<p style="font-size: 10px; font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">                       
 
 \# SIGNER WALLET ACCESS KEYS (OPTIONAL IF ACCESSING WALLET)
 WALLET_ADDRESS="(Put your Wallet(Example Metamask) account PUBLIC address Here)"
