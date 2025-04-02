@@ -1,18 +1,18 @@
 <p style="font-size: 6px; font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">                       
     
-\# ETHERSCAN API KEY<br>
-ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
+\# ETHERSCAN API KEY<BR>
+ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"<BR>
 
-\# ALCHEMY NETWORK KEYS
-GOERLI_ALCHEMY_TEST_URL="(Put your GOERLI ALCHEMY public Key Here)"
-SEPOLIA_ALCHEMY_TEST_URL="(Put your SEPOLI ALCHEMY public Key Here)"
-MAINNET_ALCHEMY_TEST_URL="(Put your MAINNET ALCHEMY public Key Here)"
-POLYGON_ALCHEMY_TEST_URL="(Put your POLYGON ALCHEMY public Key Here)"
+\# ALCHEMY NETWORK KEYS<BR>
+GOERLI_ALCHEMY_TEST_URL="(Put your GOERLI ALCHEMY public Key Here)"<BR>
+SEPOLIA_ALCHEMY_TEST_URL="(Put your SEPOLI ALCHEMY public Key Here)"<BR>
+MAINNET_ALCHEMY_TEST_URL="(Put your MAINNET ALCHEMY public Key Here)"<BR>
+POLYGON_ALCHEMY_TEST_URL="(Put your POLYGON ALCHEMY public Key Here)"<BR>
 
-\# INFURA NETWORK KEYS
-GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"
-SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"
-MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"
+\# INFURA NETWORK KEYS<BR>
+GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"<BR>
+SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"<BR>
+MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"<BR>
 </p>
 
 
