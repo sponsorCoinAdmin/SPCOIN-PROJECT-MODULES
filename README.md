@@ -17,6 +17,10 @@ alias vs="code"
 
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 
+# PREREQUSITES prior to running the Installation script
+create a directory called <b>SECURITY</b>.
+
+
 ## Install and run the following script
 cloneSpCoinProjects() {<BR>
     clear<BR>
@@ -27,7 +31,7 @@ cloneSpCoinProjects() {<BR>
     cd $ACTIVE_PROJECT_NAME<BR>
     echo "EXECUTING: . ./scripts/installNodeSubModules.sh"<BR>
     . ./scripts/installNodeSubModules.sh<BR>
-    echo "EXECUTING: . ./scripts/setupEnvAliases.sh"<BR>
+    echo "EXECUTING: . ./scripts/setupAliases.sh"<BR>
     . ./scripts/setupEnvAliases.sh<BR>
     cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f<BR>
     cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f<BR>
