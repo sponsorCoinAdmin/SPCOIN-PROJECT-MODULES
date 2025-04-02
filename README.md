@@ -26,7 +26,7 @@ In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 ### .env (A short Example File)
 \# COPY THIS FILE to project directory spcoin-hardhat-contracts-js-access/.e 
 
-<p style="font-family: 'Courier New', Courier, monospace;">
+<p style="font-size: 10px font-family: 'Courier New', Courier, monospace;">
 \#####################################################
 \# PRIVATE REQUIRED ADDRESSES                        #
 \#####################################################
