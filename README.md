@@ -1,6 +1,6 @@
 <p style="font-size: 6px; font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">                       
     
-\# ETHERSCAN API KEY
+\# ETHERSCAN API KEY<br>
 ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
 
 \# ALCHEMY NETWORK KEYS
