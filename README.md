@@ -24,7 +24,7 @@ In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
 
 ### .env (A short Example File)
-\# COPY THIS FILE to project directory spcoin-hardhat-contracts-js-access/.e 
+#### Copy these file entries the .env file located at the root of the server app
 ```env
 # ETHERSCAN API KEY
 ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
