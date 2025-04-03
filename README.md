@@ -107,7 +107,8 @@ $SECURITY_HOME/SECURITY
                   |--.env		   (for app spcoin-hardhat-contract-access-test)
                   |--.env.local	(for app spcoin-nextjs-front-end)
 ```
-## Install and run the following script
+## copy and run the following gitHub installation script
+This script will create the shell function cloneSpCoinProjects required for cloning Sponsor Coin Modules
 ```env
 cloneSpCoinProjects() {
     clear
