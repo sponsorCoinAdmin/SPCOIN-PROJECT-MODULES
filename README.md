@@ -11,8 +11,8 @@ In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 <b>.env ~ </b> Required for back end processing
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
 
-### .env (Example File)
-#### Copy the required file entries into the .env file located at the root of the server app, (spcoin-hardhat-contract-access-test)
+### spcoin-hardhat-contract-access-test (.env Example File)
+#### Copy the required file entries into the .env file located at the root of the server app
 The .env is typically used in hardhat back end testing project spcoin-hardhat-contract-access-test
 Use the following entries as sample entries required to run the project
 
@@ -53,9 +53,8 @@ NEXT_PUBLIC_INFURA_POLYGON_URL=https://polygon-mainnet.infura.io/v3/(Put your PO
 NEXT_PUBLIC_INFURA_SEPOLIA_URL=https://sepolia.infura.io/v3/(Put your SEPOLIA INFURA public Key Here)
 NEXT_PUBLIC_INFURA_MAINNET_URL=https://mainnet.infura.io/v3/(Put your MAINNET INFURA public Key Here)
 ```
-
-### .env.local (Example File)
-#### Copy the required file entries in the .env.local file located at the root of the server app, (spcoin-nextjs-front-end)
+### spcoin-nextjs-front-end (.env.local Example File)
+#### Copy the required file entries in the .env.local file located at the root of the server app
 The .env.local is typically used in the sponsorcoin nextjs front-end project spcoin-nextjs-front-end
 Use the following entries as sample entries required to run the project
 
@@ -152,7 +151,7 @@ alias hhsize="sethh; npx hardhat size-contracts"
 alias hhtest="sethh; reset;clear; npx hardhat test 2>&1 | tee ./test.out/hhtest.out"
 alias hhrun="sethh;  npx hardhat node"
 
-#DEPLOY TOKENS
+# DEPLOY TOKENS
 alias deploytokens="sethh; . ./scripts/deployTokens.sh"
 alias deployapollo="sethh; . ./scripts/deployments/deployApollo.sh"
 alias deploychicken="sethh; . ./scripts/deployments/deployChickenCoin.sh"
@@ -168,7 +167,7 @@ alias forkpolygon="sethh; npx hardhat node --fork https://polygon-mainnet.infura
 alias forksepolia="sethh; npx hardhat node --fork https://sepolia.infura.io/v3/08b06e80980b4c1c9d9d450f4f71607d &"
 alias starthh="$SCRIPTS_DIR/startLocalHardHat.sh &"
 
-#POPULAR ALIAS COMMANDS AFTER INSTALLATION
+# POPULAR ALIAS COMMANDS AFTER INSTALLATION
 alias ve="vi $ROOT_ENV_DIR/.e;e"
 alias vm="vi $ROOT_ENV_DIR/.m;m"
 
