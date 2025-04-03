@@ -18,17 +18,120 @@ alias vs="code"
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 
 ## PREREQUSITES prior to running the Installation script
-create a directory called <b>SECURITY</b>.
+Create a directory called <b>SECURITY</b>.
 In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 <b>.env ~ </b> Required for back end processing
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
 
-### .env (A short Example File)
-#### Copy these file entries the .env file located at the root of the server app
-the .env is typically used in hardhat back end testing project spcoin-hardhat-contract-access-test
+### .env (Example File)
+#### Copy these file entries the .env file located at the root of the server app, (spcoin-hardhat-contract-access-test)
+The .env is typically used in hardhat back end testing project spcoin-hardhat-contract-access-test
 Use the following entries as sample entries required to run the project
+
 ```env
 # HARDHAT LOCALHOST ( Your hardhat base url domain:port)
+HARDHAT="http://127.0.0.1:8545"
+
+# SIGNER ACCOUNT ACCESS KEYS (Sellect a valid account from a wallet like Metamask)
+WALLET_ADDRESS="(Put your WALLET account public address Key Here)"
+WALLET_SECRET="(Put your WALLET account private address Key Here)"
+
+# ETHERSCAN API KEY
+ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
+
+# SAMPLE ALCHEMY NETWORK KEYS
+GOERLI_ALCHEMY_TEST_URL="(Put your GOERLI ALCHEMY public Key Here)"
+SEPOLIA_ALCHEMY_TEST_URL="(Put your SEPOLIA ALCHEMY public Key Here)"
+MAINNET_ALCHEMY_TEST_URL="(Put your MAINNET ALCHEMY public Key Here)"
+POLYGON_ALCHEMY_TEST_URL="(Put your POLYGON ALCHEMY public Key Here)"
+
+# SAMPLE ALCHEMY NETWORK URLS
+NEXT_PUBLIC_ALCHEMY_MAINNET_URL=https://eth-mainnet.g.alchemy.com/v2/(Put your MAINNET ALCHEMY public Key Here)
+NEXT_PUBLIC_ALCHEMY_POLYGON_URL=https://polygonzkevm-mainnet.g.alchemy.com/v2/(Put your POLYGON ALCHEMY public Key Here)
+NEXT_PUBLIC_ALCHEMY_SEPOLIA_URL=https://eth-sepolia.g.alchemy.com/v2/(Put your SEPOLIA ALCHEMY public Key Here)
+
+SAMPLE INFURA KEYS which you must get from Infura (www.infura.ioInfura)
+# SAMPLE INFURA NETWORK KEYS
+BASE_INFURA_TEST_URL="(Put your BASE INFURA public Key Here)"
+GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"
+POLYGON_INFURA_TEST_URL="(Put your POLYGON INFURA public Key Here)"
+SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"
+MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"
+
+# SAMPLE INFURA NETWORK URLS
+NEXT_PUBLIC_INFURA_BASE_URL=https://base-mainnet.infura.io/v3/(Put your BASE INFURA public Key Here)
+NEXT_PUBLIC_INFURA_GORELI_URL=https://sepolia.infura.io/v3/(Put your GOLERI INFURA public Key Here)
+NEXT_PUBLIC_INFURA_POLYGON_URL=https://polygon-mainnet.infura.io/v3/(Put your POLYGON INFURA public Key Here)
+NEXT_PUBLIC_INFURA_SEPOLIA_URL=https://sepolia.infura.io/v3/(Put your SEPOLIA INFURA public Key Here)
+NEXT_PUBLIC_INFURA_MAINNET_URL=https://mainnet.infura.io/v3/(Put your MAINNET INFURA public Key Here)
+```
+
+### .env.local (Example File)
+#### Copy these file entries the .env file located at the root of the server app, (spcoin-nextjs-front-end)
+The .env.local is typically used in the sponsorcoin nextjs front-end project spcoin-nextjs-front-end
+Use the following entries as sample entries required to run the project
+
+```env
+# SELECT ONE OF THE TWO PROVIDERS BELOW
+#NEXT_PUBLIC_BLOCKCHAIN_PROVIDER=ALCHEMY
+NEXT_PUBLIC_BLOCKCHAIN_PROVIDER=INFURA
+
+NEXT_TELEMETRY_DISABLED=1
+ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
+QUOTE/PROCE API PROVIDER KEY
+OX_API_KEY="(Put your 0X API Privider Key Here)"
+
+FEE_RECIPIENT_WALLET=(Wallet Address to Receive Fees for Client Transactions)
+NEXT_PUBLIC_AFFILIATE_FEE=9 Amount of collection fees. Example 0.001 0.1% of Purchase Token)
+
+NEXT_PUBLIC_API_SERVER=http://localhost:3000/api/
+
+SAMPLE ALCHEMY  KEYS which you must get from Alchemy (https://auth.alchemy.com/)
+# SAMPLE ALCHEMY NETWORK KEYS
+GOERLI_ALCHEMY_TEST_URL="(Put your GOERLI ALCHEMY public Key Here)"
+SEPOLIA_ALCHEMY_TEST_URL="(Put your SEPOLIA ALCHEMY public Key Here)"
+MAINNET_ALCHEMY_TEST_URL="(Put your MAINNET ALCHEMY public Key Here)"
+POLYGON_ALCHEMY_TEST_URL="(Put your POLYGON ALCHEMY public Key Here)"
+
+# SAMPLE ALCHEMY NETWORK URLS
+NEXT_PUBLIC_ALCHEMY_MAINNET_URL=https://eth-mainnet.g.alchemy.com/v2/(Put your MAINNET ALCHEMY public Key Here)
+NEXT_PUBLIC_ALCHEMY_POLYGON_URL=https://polygonzkevm-mainnet.g.alchemy.com/v2/(Put your POLYGON ALCHEMY public Key Here)
+NEXT_PUBLIC_ALCHEMY_SEPOLIA_URL=https://eth-sepolia.g.alchemy.com/v2/(Put your SEPOLIA ALCHEMY public Key Here)
+
+SAMPLE INFURA KEYS which you must get from Infura (www.infura.ioInfura)
+# SAMPLE INFURA NETWORK KEYS
+BASE_INFURA_TEST_URL="(Put your BASE INFURA public Key Here)"
+GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"
+POLYGON_INFURA_TEST_URL="(Put your POLYGON INFURA public Key Here)"
+SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"
+MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"
+
+# SAMPLE INFURA NETWORK URLS
+NEXT_PUBLIC_INFURA_BASE_URL=https://base-mainnet.infura.io/v3/(Put your BASE INFURA public Key Here)
+NEXT_PUBLIC_INFURA_GORELI_URL=https://sepolia.infura.io/v3/(Put your GOLERI INFURA public Key Here)
+NEXT_PUBLIC_INFURA_POLYGON_URL=https://polygon-mainnet.infura.io/v3/(Put your POLYGON INFURA public Key Here)
+NEXT_PUBLIC_INFURA_SEPOLIA_URL=https://sepolia.infura.io/v3/(Put your SEPOLIA INFURA public Key Here)
+NEXT_PUBLIC_INFURA_MAINNET_URL=https://mainnet.infura.io/v3/(Put your MAINNET INFURA public Key Here)
+```
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 HARDHAT="http://127.0.0.1:8545"
 
 # SIGNER ACCOUNT ACCESS KEYS (Sellect a valid account from a wallet like Metamask)
@@ -51,10 +154,6 @@ GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"
 SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"
 MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"
 ```
-
-
-
-### .env.local (Example File)
 
 
 ## Install and run the following script
