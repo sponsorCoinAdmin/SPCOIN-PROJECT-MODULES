@@ -8,7 +8,7 @@
 https://git-scm.com/downloads
 #### In the home directory, it is expected that you have been setup with github ssh access
 #### Directory Setup
-Create a directory called SECURITY. This directory should be placed in a location that is not publicly accessible, as it contains keys that must remain private to safeguard the integrity of the application. In this case, we will assign the home directory (\~) as the location, since it is secured by both the system administrator and the owner of the home directory. For the installation script below, we will set <b>SECURITY_HOME="~"</B>.<BR>
+Create a directory called SECURITY. This directory should be placed in a location that is not publicly accessible, as it contains keys that must remain private to safeguard the integrity of the application. In this case, we will assign the home directory (\~) as the location, since it is secured by both the system administrator and the owner of the home directory. For the installation script below, we will set <b>SECURITY_HOME="~/spCoin"</B>.<BR>
 In this directory, create two files. <b>.env</b> and <b>.env.local</b><BR>
 <b>.env ~ </b> Required for back end processing<BR>
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
@@ -116,7 +116,7 @@ This script will create the shell function cloneSpCoinProjects required for clon
 cloneSpCoinProjects() {
     clear
     echo NOTE: SECURITY_HOME may be modified to any directory to store the security keys for the app
-    export SECURITY_HOME="~"
+    export SECURITY_HOME="~/spCoin"
     export ACTIVE_ROOT_DIR=$PWD
     export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES
     git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git
