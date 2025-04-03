@@ -101,8 +101,8 @@ NEXT_PUBLIC_INFURA_MAINNET_URL=https://mainnet.infura.io/v3/(Put your MAINNET IN
 ```env  
 $SECURITY_HOME/SECURITY
                   |
-                  |--.env		   (for app spcoin-hardhat-contract-access-test)
-                  |--.env.local	(for app spcoin-nextjs-front-end)
+                  |--.env       (for app spcoin-hardhat-contract-access-test)
+                  |--.env.local (for app spcoin-nextjs-front-end)
 ```
 ## copy and run the following gitHub installation script
 This script will create the shell function cloneSpCoinProjects required for cloning Sponsor Coin Modules
