@@ -24,7 +24,7 @@ In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
 
 ### .env (Example File)
-#### Copy these file entries the .env file located at the root of the server app, (spcoin-hardhat-contract-access-test)
+#### Copy the required file entries into the .env file located at the root of the server app, (spcoin-hardhat-contract-access-test)
 The .env is typically used in hardhat back end testing project spcoin-hardhat-contract-access-test
 Use the following entries as sample entries required to run the project
 
@@ -67,7 +67,7 @@ NEXT_PUBLIC_INFURA_MAINNET_URL=https://mainnet.infura.io/v3/(Put your MAINNET IN
 ```
 
 ### .env.local (Example File)
-#### Copy these file entries the .env file located at the root of the server app, (spcoin-nextjs-front-end)
+#### Copy the required file entries in the .env.local file located at the root of the server app, (spcoin-nextjs-front-end)
 The .env.local is typically used in the sponsorcoin nextjs front-end project spcoin-nextjs-front-end
 Use the following entries as sample entries required to run the project
 
@@ -113,47 +113,21 @@ NEXT_PUBLIC_INFURA_POLYGON_URL=https://polygon-mainnet.infura.io/v3/(Put your PO
 NEXT_PUBLIC_INFURA_SEPOLIA_URL=https://sepolia.infura.io/v3/(Put your SEPOLIA INFURA public Key Here)
 NEXT_PUBLIC_INFURA_MAINNET_URL=https://mainnet.infura.io/v3/(Put your MAINNET INFURA public Key Here)
 ```
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-HARDHAT="http://127.0.0.1:8545"
-
-# SIGNER ACCOUNT ACCESS KEYS (Sellect a valid account from a wallet like Metamask)
-WALLET_ADDRESS="(Put your WALLET account public address Key Here)"
-WALLET_SECRET="(Put your WALLET account private address Key Here)"
-
-# ETHERSCAN API KEY
-ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
-
-SAMPLE KEYS which you must get from Alchemy (https://auth.alchemy.com/)
-# ALCHEMY NETWORK KEYS
-GOERLI_ALCHEMY_TEST_URL="(Put your GOERLI ALCHEMY public Key Here)"
-SEPOLIA_ALCHEMY_TEST_URL="(Put your SEPOLIA ALCHEMY public Key Here)"
-MAINNET_ALCHEMY_TEST_URL="(Put your MAINNET ALCHEMY public Key Here)"
-POLYGON_ALCHEMY_TEST_URL="(Put your POLYGON ALCHEMY public Key Here)"
-
-SAMPLE KEYS which you must get from Infura (www.infura.ioInfura)
-# INFURA NETWORK KEYS
-GOERLI_INFURA_TEST_URL="(Put your GOERLI INFURA public Key Here)"
-SEPOLIA_INFURA_TEST_URL="(Put your SEPOLIA INFURA public Key Here)"
-MAINNET_INFURA_TEST_URL="(Put your MAINNET INFURA public Key Here)"
+##You should now have 2 file entries as follows:
+```env  
+SECURITY
+   |
+   |--.env		(for app spcoin-hardhat-contract-access-test)
+   |--.env.local	(for app spcoin-nextjs-front-end)
 ```
+
+
+
+
+
+
+
+
 
 
 ## Install and run the following script
