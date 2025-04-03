@@ -124,23 +124,25 @@ $SECURITY_HOME/SECURITY
                   |--.env.local	(for app spcoin-nextjs-front-end)
 ```
 ## Install and run the following script
-cloneSpCoinProjects() {<BR>
-    clear<BR>
-    #NOTE: SECURITY_HOME may be modified to any directory to store the security keys for the app
+```env
+cloneSpCoinProjects() {
+    clear
+    echo NOTE: SECURITY_HOME may be modified to any directory to store the security keys for the app
     export SECURITY_HOME="~"
-    export ACTIVE_ROOT_DIR=$PWD<BR>
-    export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
-    git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git<BR>
-    echo "EXECUTING cd $ACTIVE_PROJECT_NAME"<BR>
-    cd $ACTIVE_PROJECT_NAME<BR>
-    echo "EXECUTING: . ./scripts/installNodeSubModules.sh"<BR>
-    . ./scripts/installNodeSubModules.sh<BR>
-    echo "EXECUTING: . ./scripts/setupAliases.sh"<BR>
-    . ./scripts/setupEnvAliases.sh<BR>
-    cp $SECURITY_HOME/SECURITY/.env spcoin-hardhat-contract-access-test -f<BR>
-    cp $SECURITY_HOME/SECURITY/.env.local ./spcoin-nextjs-front-end -f<BR>
-    setroot<BR>
+    export ACTIVE_ROOT_DIR=$PWD
+    export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES
+    git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git
+    echo "EXECUTING cd $ACTIVE_PROJECT_NAME"
+    cd $ACTIVE_PROJECT_NAME
+    echo "EXECUTING: . ./scripts/installNodeSubModules.sh"
+    . ./scripts/installNodeSubModules.sh
+    echo "EXECUTING: . ./scripts/setupAliases.sh"
+    . ./scripts/setupEnvAliases.sh
+    cp $SECURITY_HOME/SECURITY/.env spcoin-hardhat-contract-access-test -f
+    cp $SECURITY_HOME/SECURITY/.env.local ./spcoin-nextjs-front-end -f
+    setroot
 }
+```
 
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
 ### 1. Run the above shell script in a command terminal
