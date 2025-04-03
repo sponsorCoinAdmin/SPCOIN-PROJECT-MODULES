@@ -1,21 +1,6 @@
 # SPCOIN-PROJECT-MODULES
 
-POPULAR COMMANDS
-alias ve="vi $ROOT_ENV_DIR/.e;e"
-alias vm="vi $ROOT_ENV_DIR/.m;m"
-
-alias cdbe="cd $PROJECT_ROOT/$SPCOIN_BE_PATH"
-alias cdfe="cd $PROJECT_ROOT/$SPCOIN_FE_PATH"
-alias cdscr="cd $ROOT_SCRIPTS_DIR"
-alias cddep="cdscr; cd deployments"
-alias cdhh="cdbe"
-
-alias sethh="clear; cdhh"
-alias vbrc="vi ~/.bashrc"
-alias vg="sethh; vi .gitignore"
-alias vs="code"
-
-# CLONING PROJECTS WITH ASSOCIATED SUBMODULES
+# CLONING SPONSOR COINS PROJECTS WITH ASSOCIATED SUBMODULES
 
 ## PREREQUSITES prior to running the Installation script
 Create a directory called <b>SECURITY</b>. This directory should be placed in a directory where it is not public accessable
@@ -145,8 +130,7 @@ cloneSpCoinProjects() {
 ```
 
 ## EX1. Cloning SPCOIN-PROJECT-MODULES with all submodules
-### 1. Run the above shell script in a command terminal
-### 2. Execute the schipt in the directorywhere you wish to install the project by typing
+### 1. Run the above shell script in a command terminalwh ere you wish to install the project by typing
 cloneSpCoinProjects\<enter>
 
 ## EX2. Cloning SPCOIN-PROJECT-MODULES with all submodules using your shell startup script
@@ -183,3 +167,18 @@ alias forkmainnet="sethh; npx hardhat node --fork https://mainnet.infura.io/v3/0
 alias forkpolygon="sethh; npx hardhat node --fork https://polygon-mainnet.infura.io/v3/08b06e80980b4c1c9d9d450f4f71607d &"
 alias forksepolia="sethh; npx hardhat node --fork https://sepolia.infura.io/v3/08b06e80980b4c1c9d9d450f4f71607d &"
 alias starthh="$SCRIPTS_DIR/startLocalHardHat.sh &"
+
+#POPULAR ALIAS COMMANDS AFTER INSTALLATION
+alias ve="vi $ROOT_ENV_DIR/.e;e"
+alias vm="vi $ROOT_ENV_DIR/.m;m"
+
+alias cdbe="cd $PROJECT_ROOT/$SPCOIN_BE_PATH"
+alias cdfe="cd $PROJECT_ROOT/$SPCOIN_FE_PATH"
+alias cdscr="cd $ROOT_SCRIPTS_DIR"
+alias cddep="cdscr; cd deployments"
+alias cdhh="cdbe"
+
+alias sethh="clear; cdhh"
+alias vbrc="vi ~/.bashrc"
+alias vg="sethh; vi .gitignore"
+alias vs="code"
