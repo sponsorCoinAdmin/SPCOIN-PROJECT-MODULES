@@ -1,8 +1,8 @@
 # SPCOIN-PROJECT-MODULES
 
-# CLONING SPONSOR COINS PROJECTS WITH ASSOCIATED SUBMODULES
+## CLONING SPONSOR COINS PROJECTS WITH ASSOCIATED SUBMODULES
 
-## PREREQUSITES prior to running the Installation script
+### PREREQUSITES prior to running the Installation script
 Create a directory called <b>SECURITY</b>. This directory should be placed in a directory where it is not public accessable
 since it contains keys which are to be private to safegard the integrity of the application. In this case we shahh assign the 
 home directory since it is secured by the owner of the home directory and tha system admin.  For the installation script
