@@ -3,10 +3,7 @@
 ## CLONING SPONSOR COINS PROJECTS WITH ASSOCIATED SUBMODULES
 
 ### PREREQUSITES prior to running the Installation script
-Create a directory called <b>SECURITY</b>. This directory should be placed in a directory where it is not public accessable
-since it contains keys which are to be private to safegard the integrity of the application. In this case we shahh assign the 
-home directory since it is secured by the owner of the home directory and tha system admin.  For the installation script
-below we will set SECURITY_HOME="~".<BR>
+Create a directory called SECURITY. This directory should be placed in a location that is not publicly accessible, as it contains keys that must remain private to safeguard the integrity of the application. In this case, we will assign the home directory (~) as the location, since it is secured by both the system administrator and the owner of the home directory. For the installation script below, we will set SECURITY_HOME="~".<BR>
 In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 <b>.env ~ </b> Required for back end processing
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
