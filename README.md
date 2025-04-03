@@ -18,7 +18,10 @@ alias vs="code"
 # CLONING PROJECTS WITH ASSOCIATED SUBMODULES
 
 ## PREREQUSITES prior to running the Installation script
-Create a directory called <b>SECURITY</b>.
+Create a directory called <b>SECURITY</b>. This directory should be placed in a directory where it is not public accessable
+since it contains keys which are to be private to safegard the integrity of the application. In this case we shahh assign the 
+home directory since it is secured by the owner of the home directory and tha system admin.  For the installation script
+below we will set SECURITY_HOME="~".<BR>
 In this directory, create two files. <b>.env</b> and <b>.env.local</b>
 <b>.env ~ </b> Required for back end processing
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
@@ -115,24 +118,16 @@ NEXT_PUBLIC_INFURA_MAINNET_URL=https://mainnet.infura.io/v3/(Put your MAINNET IN
 ```
 ##You should now have 2 file entries as follows:
 ```env  
-SECURITY
-   |
-   |--.env		(for app spcoin-hardhat-contract-access-test)
-   |--.env.local	(for app spcoin-nextjs-front-end)
+$SECURITY_HOME/SECURITY
+                  |
+                  |--.env		   (for app spcoin-hardhat-contract-access-test)
+                  |--.env.local	(for app spcoin-nextjs-front-end)
 ```
-
-
-
-
-
-
-
-
-
-
 ## Install and run the following script
 cloneSpCoinProjects() {<BR>
     clear<BR>
+    #NOTE: SECURITY_HOME may be modified to any directory to store the security keys for the app
+    export SECURITY_HOME="~"
     export ACTIVE_ROOT_DIR=$PWD<BR>
     export ACTIVE_PROJECT_NAME=SPCOIN-PROJECT-MODULES<BR>
     git clone --recurse-submodules git@github.com:sponsorCoinAdmin/$ACTIVE_PROJECT_NAME.git<BR>
@@ -142,8 +137,8 @@ cloneSpCoinProjects() {<BR>
     . ./scripts/installNodeSubModules.sh<BR>
     echo "EXECUTING: . ./scripts/setupAliases.sh"<BR>
     . ./scripts/setupEnvAliases.sh<BR>
-    cp ~/SECURITY/.env spcoin-hardhat-contract-access-test -f<BR>
-    cp ~/SECURITY/.env.local ./spcoin-nextjs-front-end -f<BR>
+    cp $SECURITY_HOME/SECURITY/.env spcoin-hardhat-contract-access-test -f<BR>
+    cp $SECURITY_HOME/SECURITY/.env.local ./spcoin-nextjs-front-end -f<BR>
     setroot<BR>
 }
 
