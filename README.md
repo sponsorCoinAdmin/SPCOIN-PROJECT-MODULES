@@ -3,10 +3,16 @@
 ## CLONING SPONSOR COINS PROJECTS WITH ASSOCIATED SUBMODULES
 
 ### PREREQUSITES prior to running the Installation script
+
+#### NOTE: this is a unix bash script if running Windows you must install gitbash.
+https://git-scm.com/downloads
+#### In the home directory, it is expected that you have been setup with github ssh access
+#### Directory Setup
 Create a directory called SECURITY. This directory should be placed in a location that is not publicly accessible, as it contains keys that must remain private to safeguard the integrity of the application. In this case, we will assign the home directory (\~) as the location, since it is secured by both the system administrator and the owner of the home directory. For the installation script below, we will set <b>SECURITY_HOME="~"</B>.<BR>
 In this directory, create two files. <b>.env</b> and <b>.env.local</b><BR>
 <b>.env ~ </b> Required for back end processing<BR>
 <b>.env.local ~ </b> Required for nextjs fronr nen processing
+
 
 ### spcoin-hardhat-contract-access-test (.env Example File)
 #### Copy the required file entries into the .env file located at the root of the server app
