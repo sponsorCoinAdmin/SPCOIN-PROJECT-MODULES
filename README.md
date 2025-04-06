@@ -22,6 +22,7 @@ Use the following entries as sample entries required to run the project
 ```env
 # HARDHAT LOCALHOST ( Your hardhat base url domain:port)
 HARDHAT="http://127.0.0.1:8545"
+NEXT_PUBLIC_DEBUG='true'
 
 # SIGNER ACCOUNT ACCESS KEYS (Sellect a valid account from a wallet like Metamask)
 WALLET_ADDRESS="(Put your WALLET account public address Key Here)"
@@ -65,6 +66,7 @@ Use the following entries as sample entries required to run the project
 # SELECT ONE OF THE TWO PROVIDERS BELOW
 #NEXT_PUBLIC_BLOCKCHAIN_PROVIDER=ALCHEMY
 NEXT_PUBLIC_BLOCKCHAIN_PROVIDER=INFURA
+NEXT_PUBLIC_DEBUG='true'
 
 NEXT_TELEMETRY_DISABLED=1
 ETHERSCAN_API_KEY="(Put your Etherscan Key Here)"
