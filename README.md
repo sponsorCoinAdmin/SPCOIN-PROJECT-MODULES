@@ -64,7 +64,7 @@ Use the following entries as sample entries required to run the project
 
 ```env
 # SELECT ONE OF THE TWO PROVIDERS BELOW
-NEXT_PUBLIC_SPCOIN_HOSTNAME=http://localhost:3000
+NEXT_PUBLIC_SPCOIN_BASE_URL=http://localhost:3000
 NEXT_PUBLIC_DEBUG='true'
 
 #NEXT_PUBLIC_BLOCKCHAIN_PROVIDER=ALCHEMY
