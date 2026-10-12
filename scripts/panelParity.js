@@ -37,6 +37,7 @@
 //   (`cd spCoinExtension && npm run build`) so --ext points at a fresh build.
 //   The wallet is unlocked for the web app by flipping the gate flag through
 //   webpack's module cache in the TEST BROWSER only — nothing in the repo changes.
+//   --show <text>  also prints, for every tab and both apps, the visible lines that contain <text> (to see WHY a line differs).
 //   Exit code: 0 = no unexpected difference, 1 = parity gap, 2 = could not run.
 
 const fs = require('fs');
@@ -64,6 +65,24 @@ if (treeIdx >= 0 && treeIdx !== TABS.length - 1) {
 const HOST_ONLY_GATES = new Set(['MERIT_WALLET']);
 // Lines that legitimately differ (live data, dev stamps).
 const IGNORE_LINE = [/\.tsx/, /\bbuild \d+/i, /^Balance:/, /Balance:\s/, /^\(?@sponsorcoin/, /^\d[\d.,]*$/];
+// 2026-10-09 -- differences that are the HOST's business or only the PROBE's state, listed so a REAL gap stands out:
+//  STATE: the web probe has no active account (its wallet is locked), the extension probe has one, so the web shows Connect where the extension shows the action
+//    button, and balances / counts differ.
+//  HOST-ONLY: the web's dev tooling (Shared Libraries, Check Drift, the node_source sync button); "Select an account first." is the shared Wallet Security section's hint, shown only while the web probe has no active account (state); the extension's own
+//    vault features (Delete Wallet, Reveal Secret Recovery Phrase, the Open target Options).
+const HOST_ONLY_LINE = [
+  /^Connect$/, /^Swap via Uniswap V3$/, /^Enter Amount & Select Recipient$/, /^Select Trading Pair$/, /^Sell Token Required$/, /^Sponsor Staked spCoins:/,
+  /standard test accounts .* (are|is) in the (keystore|vault)/i,
+  /^Select Account:$/, /^Select an account first\.$/, /^Shared Libraries \(dev\)$/, /^One click: syncs node_source/, /^Check Drift$/, /^Sync node_source/,
+  /^Backup file$/, /^A backup file holds every account of this wallet/, /^Back up to a file$/, /^To restore a backup, remove this wallet first/,
+  /^Delete Wallet$/, /^Options$/, /^Local$/, /^Which site the Open button/, /^Reveal$/, /^Security — Reveal Secret Recovery Phrase$/, /^The phrase restores every account/,
+  /^.+ — 0x[0-9a-fA-F]{40}$/,
+  // the Config tab's "Who signs" section states which holder signs for the ACTIVE account: state, not layout (the probe has an account in one host and none in the other)
+  // a wallet is named by where it runs (createWalletAccountDesign section 3): the web's main list is the dev keystore, the extension's list its own vault
+  /^Merit Wallet \((Web Dev Server|Extension|Web)\)$/i,
+  /^Who signs$/, /signs for this account/, /^Select an account to see who signs for it\.$/, /^Reading who signs for this account/,
+];
+const STATE_ONLY_GATES = new Set(['SPONSOR_CONNECT_TRADE_BUTTON']);
 
 function findChrome() {
   if (args.chrome && fs.existsSync(args.chrome)) return args.chrome;
@@ -158,6 +177,10 @@ async function collectExtension() {
   const sw = ctx.serviceWorkers()[0] || (await ctx.waitForEvent('serviceworker', { timeout: 20000 }));
   const page = await ctx.newPage();
   await page.goto(`chrome-extension://${new URL(sw.url()).host}/sidepanel.html`);
+  await page.waitForTimeout(3000);
+  // The vault is the wallet (setup is required by default), so the probe needs one: create it with the Hardhat phrase, as the web side's wallet has the Hardhat accounts.
+  await page.evaluate(() => chrome.runtime.sendMessage({ type: 'merit/vault/create', password: 'password-1', mnemonic: 'test test test test test test test test test test test junk' }));
+  await page.reload();
   await page.waitForTimeout(8000);
   const out = {};
   for (const t of TABS) { await clickTab(page, t); out[t] = await snapshot(page); }
@@ -171,12 +194,13 @@ async function collectExtension() {
   const [web, ext] = [await collectWeb(), await collectExtension()];
   let gaps = 0;
   for (const t of TABS) {
-    const wg = new Set(web[t].gates.filter((g) => !HOST_ONLY_GATES.has(g)));
-    const eg = new Set(ext[t].gates.filter((g) => !HOST_ONLY_GATES.has(g)));
+    const wg = new Set(web[t].gates.filter((g) => !HOST_ONLY_GATES.has(g) && !STATE_ONLY_GATES.has(g)));
+    const eg = new Set(ext[t].gates.filter((g) => !HOST_ONLY_GATES.has(g) && !STATE_ONLY_GATES.has(g)));
     const gateOnlyWeb = [...wg].filter((g) => !eg.has(g));
     const gateOnlyExt = [...eg].filter((g) => !wg.has(g));
-    const wl = new Set(cleanLines(web[t].lines));
-    const el = new Set(cleanLines(ext[t].lines));
+    const wl = new Set(cleanLines(web[t].lines).filter((l) => !HOST_ONLY_LINE.some((re) => re.test(l))));
+    const el = new Set(cleanLines(ext[t].lines).filter((l) => !HOST_ONLY_LINE.some((re) => re.test(l))));
+    if (args.show) for (const [side, set] of [['web', wl], ['ext', el]]) for (const l of set) if (l.toLowerCase().includes(String(args.show).toLowerCase())) console.log(`   [${t} ${side}] ${l}`);
     const textOnlyWeb = [...wl].filter((l) => !el.has(l));
     const textOnlyExt = [...el].filter((l) => !wl.has(l));
     const n = gateOnlyWeb.length + gateOnlyExt.length + textOnlyWeb.length + textOnlyExt.length;
