@@ -24,7 +24,7 @@ WEB="$ROOT/spcoin-nextjs-front-end/node_source"
 EXT="$ROOT/spCoinExtension/node_source"
 
 # Dependency order: a lib is built after the libs it imports.
-LIBS=(spCoinCommon spCoinFeeds spCoinExchangeEngine spCoinOnChain spCoinHooks spCoinLib spCoinAccess spCoinPanels)
+LIBS=(spCoinCommon spCoinFeeds spCoinExchangeEngine spCoinOnChain spCoinHooks spCoinLib spCoinAccess spCoinPanels meritWallet)
 
 MODE=sync
 RUN_VITE=0
