@@ -35,8 +35,8 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 WEB="$ROOT/spcoin-nextjs-front-end/node_source"
 EXT="$ROOT/spCoinExtension/node_source"
 
-# Dependency order: a lib is built after the libs it imports.
-LIBS=(spCoinCommon spCoinFeeds spCoinExchangeEngine spCoinOnChain spCoinHooks spCoinLib spCoinAccess spCoinPanels meritWallet)
+# Dependency order: a lib is built after the libs it imports. meritConnect (2026-11-06, docs/design/meritConnectDesign.txt) has no dependencies, so it is first.
+LIBS=(meritConnect spCoinCommon spCoinFeeds spCoinExchangeEngine spCoinOnChain spCoinHooks spCoinLib spCoinAccess spCoinPanels meritWallet)
 
 MODE=sync
 RUN_VITE=0
