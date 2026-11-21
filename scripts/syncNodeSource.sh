@@ -73,6 +73,17 @@ for lib in "${LIBS[@]}"; do
   diff -rq "${a}src" "${b}src" >/dev/null && echo "synced $lib" || echo "FAILED $lib (still differs)"
 done
 
+# 2026-11-19: @meritWallets/meritDevOnly (test-only code: the Test Accounts section) is mirrored web -> extension like the libs; it never goes to the release repo (merit-wallet).
+mirror_devonly() {
+  local a="$WEB/@meritWallets/meritDevOnly/src" b="$EXT/@meritWallets/meritDevOnly/src"
+  [ -d "$a" ] && [ -d "$b" ] || { echo "skip   meritDevOnly (no src in one of the apps)"; return; }
+  if diff -rq "$a" "$b" >/dev/null; then echo "same   meritDevOnly"; return; fi
+  drift=1
+  if [ "$MODE" = check ]; then echo "DRIFT  meritDevOnly"; return; fi
+  cp -r "$a/." "$b/" && echo "synced meritDevOnly" && (cd "$EXT/@meritWallets/meritDevOnly" && npm run build >/dev/null 2>&1 && echo "built  [ext] meritDevOnly")
+}
+mirror_devonly
+
 # spCoinData has no src/ (assets only), so it doesn't fit the LIBS loop above
 # -- its own mirror source is the web app's public/assets/, not node_source.
 # Scope is deliberately narrow: wallets/ (full recursive -- already a 1:1
